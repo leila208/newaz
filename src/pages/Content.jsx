@@ -103,7 +103,7 @@ function Content() {
                 {rated.slice(0, 3).map((a) => (
                   <Link to={`/blogdetails/${a.id}`} key={a.id}>
                     <div className="tag">
-                      <p id="orangered"> #{a.type}</p>
+                      <p> #{a.type}</p>
                     </div>
                   </Link>
                 ))}

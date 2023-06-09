@@ -16,7 +16,7 @@ function AboutUs() {
             <div className="us-details">
               <div className="us-text">
                 <h1>
-                  Müştərilərin <i className="orange">Sharm</i> haqqında
+                  Müştərilərin <i className="orange">AZGP</i> haqqında
                   fikirləri
                 </h1>
                 <p className="pcontent">

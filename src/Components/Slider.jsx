@@ -12,7 +12,7 @@ function Slider() {
       {/* <div> */}
       <div className="hero">
         <div id="hero-text">
-          <h1>Gözəl Görün & Gözəl Hiss Et </h1>
+          <h1>Dünyanı bizimlə kəşf et</h1>
         </div>
       </div>
       <div className="swip">
@@ -33,28 +33,22 @@ function Slider() {
           autoplay={{
             delay: 2500,
           }}
-          modules={[Autoplay]}
           slidesPerView={4}
+          modules={[Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <img src="https://images.unsplash.com/photo-1615396899839-c99c121888b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG9yYW5nZSUyMCUyMGJlYXV0eSUyMCUyMHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+          {/* <SwiperSlide>
+            <img src="https://images.pexels.com/photos/3831159/pexels-photo-3831159.jpeg?auto=compress&cs=tinysrgb&w=1600" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://pro-theme.com/html/viasun/assets/img/slider-slide-4.jpg" />
+            <img src="https://images.pexels.com/photos/3831159/pexels-photo-3831159.jpeg?auto=compress&cs=tinysrgb&w=1600" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://pro-theme.com/html/viasun/assets/img/slider-slide-2.jpg" />
+            <img src="https://images.pexels.com/photos/3831159/pexels-photo-3831159.jpeg?auto=compress&cs=tinysrgb&w=1600" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="https://images.unsplash.com/photo-1601924649313-0097c1486427?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src=" https://pro-theme.com/html/viasun/assets/img/slider-slide-1.jpg" />
-          </SwiperSlide>
+            <img src="https://images.pexels.com/photos/3831159/pexels-photo-3831159.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+          </SwiperSlide> */}
         </Swiper>
       </div>
       {/* </div> */}

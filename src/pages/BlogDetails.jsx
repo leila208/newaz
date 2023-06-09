@@ -174,7 +174,7 @@ function BlogDetails() {
                       value={comment}
                       onChange={onChangeHandler}
                     />
-                    <button id="orangered" onClick={onClickHandler}>
+                    <button  className="submitBtn" onClick={onClickHandler}>
                       Göndər
                     </button>
                   </div>

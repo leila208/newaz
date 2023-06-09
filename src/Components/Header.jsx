@@ -29,51 +29,54 @@ function Header(props) {
         {/* <div className="mobile-menu"> */}
 
         <div className={istoggled ? "mobile-menu mobile-menu-open" : ""}>
-            <ul className="mobile-menu">
-              <button
-                id="finish"
-                onClick={() => {
-                  setIstoggled(!istoggled);
-                }}
-              >
-                &times;
-              </button>
-              <li>
-                <NavLink to="category/make-up">Makyaj</NavLink>
-              </li>
-              <li>
-                <NavLink to="category/skin-care">Cild Baxımı</NavLink>
-              </li>
-              <li>
-                <NavLink to="category/hair-care">Saç</NavLink>
-              </li>
-              <li>
-                <NavLink to="category/tools">Fırça və aksesuarlar</NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact">Əlaqə</NavLink>
-              </li>
-              <li>
-                <NavLink to="/aboutus">Haqqımızda</NavLink>
-              </li>
-              <li>
-                <NavLink to="/blog">Bloq</NavLink>
-              </li>
-            </ul>
-          </div>
-        
+          <ul className="mobile-menu">
+            <button
+              id="finish"
+              onClick={() => {
+                setIstoggled(!istoggled);
+              }}
+            >
+              &times;
+            </button>
+            <li>
+              <NavLink to="category/make-up">Makyaj</NavLink>
+            </li>
+            <li>
+              <NavLink to="category/skin-care">Cild Baxımı</NavLink>
+            </li>
+            <li>
+              <NavLink to="category/hair-care">Saç</NavLink>
+            </li>
+            <li>
+              <NavLink to="category/tools">Fırça və aksesuarlar</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Əlaqə</NavLink>
+            </li>
+            <li>
+              <NavLink to="/aboutus">Haqqımızda</NavLink>
+            </li>
+            <li>
+              <NavLink to="/blog">Bloq</NavLink>
+            </li>
+          </ul>
+        </div>
+
         {/* </div> */}
         {/* <div className="container"> */}
         <div className="container">
           {/* <div className="header"> */}
           <div className="navbar">
             <div className="logo">
-              <NavLink to="/">
-                <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/374/7613382374_770d2ee7-43e4-43dc-9a87-892daa6f62c1.png?cb=1658422334" />
-              </NavLink>
+              <ul className="all">
+                <li>
+                  {" "}
+                  <NavLink to="/s">AzGP</NavLink>{" "}
+                </li>
+              </ul>
             </div>
             <ul className="all">
-              <li className="open">
+              {/* <li className="open">
                 <NavLink to="category/make-up">Makyaj</NavLink>
                 <ul className="dropdown ">
                   <ul className="leftdrop">
@@ -217,23 +220,10 @@ function Header(props) {
                     </ul>
                   </ul>
                 </ul>
-              </li>
-              {/* <li className="open">
-                <NavLink to="category/sets">Setlər</NavLink>
-                <ul className="dropdown ">
-                  <ul className="leftdrop">
-                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https:%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F14%2F2020%2F10%2F29%2F3A0A5269.jpg" />
-                  </ul>
-                  <ul className="rightdrop">
-                    <ul className="down brown">
-                      <NavLink to="subcategory/endirimli">Endirimli</NavLink>
-                    </ul>
-                    <ul className="down">
-                      <NavLink to="subcategory/endirimsiz">Endirimsiz</NavLink>
-                    </ul>
-                  </ul>
-                </ul>
               </li> */}
+              <li>
+                <NavLink to="/">Ana səhifə</NavLink>
+              </li>
               <li>
                 <NavLink to="/contact">Əlaqə</NavLink>
               </li>
@@ -244,7 +234,11 @@ function Header(props) {
                 <NavLink to="/blog">Bloq</NavLink>
               </li>
             </ul>
-            <ul className="icon">
+            <NavLink to="/contact">
+              <button className="contactBtn">Əlaqə</button>
+            </NavLink>
+
+            {/* <ul className="icon">
               <li className="ket">
                 <NavLink to="/basket">
                   <i className="fa-solid fa-basket-shopping" />
@@ -267,7 +261,7 @@ function Header(props) {
                   className="fa-solid fa-user"
                 />
               </li>
-            </ul>
+            </ul> */}
 
             <i
               className="fa-regular fa-bars mobile-toggle"

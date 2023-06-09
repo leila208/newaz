@@ -26,7 +26,7 @@ Həssas dəri irsi və ya qazanılmış ola bilər. Həssas dəri müəyyən mə
   return (
     <>
       <Slider />
-      <div className="container">
+      {/* <div className="container">
         <div className="sectors">
           <NavLink to="category/skin-care">
             <div className="sector">
@@ -59,7 +59,7 @@ Həssas dəri irsi və ya qazanılmış ola bilər. Həssas dəri müəyyən mə
             </div>
           </NavLink>
         </div>
-      </div>
+      </div> */}
       <div className="container">
         <div className="heading">
           <h1> Ən çox satılan məhsullar</h1>
@@ -75,11 +75,11 @@ Həssas dəri irsi və ya qazanılmış ola bilər. Həssas dəri müəyyən mə
             <span>100% </span>Organik cild baxımı məhsulları
           </h1>
         </div>
-        <NavLink to="category/skin-care">
-          <div className="organic-button">
-            <button>Alış-verişə başla</button>
-          </div>
-        </NavLink>
+        {/* <NavLink to="category/skin-care"> */}
+          {/* <div className="organic-button"> */}
+            <button className="submitBtn">Alış-verişə başla</button>
+          {/* </div> */}
+        {/* </NavLink> */}
       </div>
       <div className="container">
         <div className="heading">

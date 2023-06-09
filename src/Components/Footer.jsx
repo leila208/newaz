@@ -50,6 +50,7 @@ function Footer() {
               <div className="bottomdiv">
                 <div className="bottomtwo">
                   <div className="bottomlogo">
+                    
                     <NavLink to="/">
                       <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/472/7626693472_f489d8d0-9af0-4f8e-8e0e-fc39e87d9301.png?cb=1658791450" />
                     </NavLink>

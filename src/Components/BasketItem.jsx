@@ -46,17 +46,18 @@ function BasketItem({ dispatch, basket, product }) {
             </h3>
           </div>
           <div className="increasediv-btn">
-            <button onClick={increase} className="divs">
-              +
-            </button>
-            <button className="divs">{product.quantity}</button>
             <button className="divs" onClick={decrease}>
               -
+            </button>
+
+            <button className="divs">{product.quantity}</button>
+            <button onClick={increase} className="divs">
+              +
             </button>
           </div>
           <div className="increasediv-total">
             <h3 className="pcontent" id="brownn">
-             {(product.quantity * product.price).toFixed(2)}₼
+              {(product.quantity * product.price).toFixed(2)}₼
             </h3>
           </div>
         </div>

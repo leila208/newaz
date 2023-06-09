@@ -255,14 +255,14 @@ function FilterCategories(props) {
             </div>
             <div className={mobileview === 0 ? "sambals" : ""}>
               {currentPosts.map((a) => (
-                  <Product
-                    category_name={category_name}
-                    product={a}
-                    name={a.name}
-                    key={a.id}
-                    id={a.id}
-                    image={a.image}
-                  />
+                <Product
+                  category_name={category_name}
+                  product={a}
+                  name={a.name}
+                  key={a.id}
+                  id={a.id}
+                  image={a.image}
+                />
               ))}
             </div>
             <div className="bottom-paginations">

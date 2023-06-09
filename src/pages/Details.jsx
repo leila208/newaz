@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { connect, useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import New from "./New";
       import ReactStars from "react-stars";
@@ -20,6 +19,7 @@ function Details( props) {
     };
     getData();
   }, []);
+  console.log(product)
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState([]);
   const onClickHandler = () => {
@@ -197,7 +197,7 @@ function Details( props) {
               value={comment}
               onChange={onChangeHandler}
             />
-            <button id="orangered" onClick={onClickHandler}>
+            <button className="submitBtn" onClick={onClickHandler}>
               Göndər
             </button>
           </div>

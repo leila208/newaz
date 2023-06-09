@@ -52,6 +52,7 @@ function Modal(props) {
               <input
                 type="password"
                 placeholder="Şifrənizi daxil edin"
+              
                 // onMouseLeave={(e) => {
                 //   if (e.target.value.length < e.target.minLength) {
                 //     alert("Şifrə minimum 7 simvol olmalıdır")

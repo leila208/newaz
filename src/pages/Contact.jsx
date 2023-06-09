@@ -76,9 +76,9 @@ function Contact() {
               <textarea placeholder="Mesaj"></textarea>
             </div>
           </form>
-          <div className="contact-button">
-            <div id="orangered">Mesajı göndər</div>
-          </div>
+          <button className="submitBtn">
+           Mesajı göndər
+          </button>
         </div>
       </div>
     </section>

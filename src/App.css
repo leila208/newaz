@@ -6,6 +6,7 @@
   text-decoration: none;
   list-style: none;
 }
+
 ::selection {
   color: #fff;
   background-color: #000;
@@ -55,7 +56,7 @@ body {
   width: max-content;
 }
 .container {
-  width: 1240px;
+  width: 1440px;
   margin: 0 auto;
   max-width: 80%;
 }
@@ -190,7 +191,7 @@ body {
 }
 .description-headings a:focus,
 a:hover {
-  color: #c9a654;
+  color: #820000;
 }
 .description-heading {
   margin: 100px 0 0 0;
@@ -277,7 +278,7 @@ a:hover {
 }
 .row-content-text {
   font-size: 24px !important;
-  padding:  15px 0 !important;
+  padding:  15px  !important;
 }
 .organic-text span {
   color: #eb5b32;
@@ -351,7 +352,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  height: 70px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -364,8 +365,8 @@ header {
   width: 100%;
   z-index: 999;
   box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
-  background-color: #deae91 !important;
-  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  background-color: #203244 !important;
+  /* animation: 500ms ease-in-out 0s normal none 1 running fadeInDown; */
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -375,7 +376,7 @@ header {
 .navbar {
   background-color: transparent;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 20px;
   font-family: Fauna One, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -403,8 +404,9 @@ header {
   font-style: normal;
 }
 .all > li > a {
-  margin: 10px;
+  margin: 20px;
   color: #fff !important;
+  font-weight: 600;
   font-size: 22px;
   font-family: Fauna One, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, sans-serif !important;
@@ -509,11 +511,14 @@ header {
 }
 .input {
   border: none;
-  border-bottom: 2px solid #c9a654;
+  border-bottom: 2px solid #203244;
   padding: 15px;
   width: 200px;
-  font-size: 15px;
+
   text-align: center;
+}
+.input::placeholder{
+  font-size: 24px;
 }
 /* //yehuuu */
 .red-input {
@@ -540,12 +545,13 @@ label {
   width: 100%;
 }
 .contact-text {
-  background-color: #fffaee;
+  background-color: #c4cdd6;
   border-radius: 20px;
   font-size: 22px;
   padding: 10px;
 }
 .small-text {
+  color: #203244;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -553,7 +559,7 @@ label {
   padding: 20px;
 }
 .small-text:not(:nth-last-of-type(1)) {
-  border-bottom: 1px solid rgb(235, 218, 218);
+  border-bottom: 1px solid #a9b2bb;
 }
 .photo {
   background-image: url("https://goex.az/site/assets/images/back-1.png");
@@ -569,7 +575,8 @@ label {
 }
 /* ana sehife background */
 .organic {
-  background-image: url("http://dtiva.wpengine.com/wp-content/uploads/2020/06/section-bgimage2b.png");
+  /* background-image: url("https://preview.colorlib.com/theme/buildream/images/bg_4.jpg.webp"); */ 
+  background-image: url("https://preview.colorlib.com/theme/buildream/images/bg_2.jpg.webp");
   width: 100%;
   height: 500px;
   margin-top: 130px;
@@ -673,7 +680,7 @@ span {
   color: #c9a654;
 }
 .share-icon {
-  background-color: #fdefe1;
+  background-color: #c4cdd6;
   border-radius: 50px;
   width: 100px;
   height: 100px;
@@ -683,11 +690,11 @@ span {
   align-items: center;
 }
 .share-icon:hover .share {
-  color: #eb5b32;
+  color: #820000;
 }
 .share {
   font-size: 40px;
-  color: #ebc59f;
+  color: #fdf8f8;
 }
 .sh {
   text-align: center;
@@ -695,7 +702,7 @@ span {
   font-size: 20px;
 }
 .sh h1:hover {
-  color: #eb5b32;
+  color: #820000;
 }
 .share-icons {
   display: flex;
@@ -766,21 +773,28 @@ hr {
 }
 .rateblog {
   margin-bottom: 10px;
-  width: 400px;
+  width: 33%;
+
   height: 566px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-bottom: 4px solid #cfd8dc;
+}
+.rateblogs a{
+  width:30% !important;
+}
+.rateblog{
+width: 100%;
 }
 .rateblog:hover {
   border: none;
 }
 .rateblog-img {
-  width: 400px;
+  /* width: 400px; */
   height: 260px;
   overflow: hidden;
 }
 .rated-details {
-  width: 400px;
+  /* width: 400px; */
   height: 300px;
   padding: 20px;
   color: #000;
@@ -793,7 +807,7 @@ hr {
   position: absolute;
   height: 4px;
   width: 100%;
-  background-color: #ff2500;
+  background-color:#820000;
   opacity: 0;
   visibility: hidden;
 }
@@ -830,7 +844,7 @@ hr {
   color: gray;
 }
 .rated-icons ul i:hover {
-  color: #ff2500;
+  color: #820000;
 }
 .rateblog-img img {
   width: 100%;
@@ -881,7 +895,7 @@ hr {
 }
 .thirty {
   font-size: 36px;
-  color: #c9a654;
+  color:#820000;
   font-family: Josefin Sans;
 }
 .fa-star {
@@ -911,11 +925,24 @@ hr {
 .contact {
   margin-top: 30px;
 }
+
 .tags h1 {
   margin: 10px 0;
 }
+.tag{
+  background-color:#c4cdd6;
+  color: #203244;
+  font-size: 20px;
+  margin-top: 10px;
+ padding:10px;
+ 
+  width: 60%;
+}
+.tag:hover{
+  color: #820000;
+}
 .tag p {
-  width: 175px;
+  /* width: 175px; */
   margin-bottom: 5px;
 }
 .content-side {
@@ -945,7 +972,7 @@ hr {
   color: #c9a654;
 }
 .orange {
-  color: #c9a654;
+  color: #203244;
   margin-top: 5px;
 }
 .fa-user-hair-long {
@@ -959,7 +986,7 @@ hr {
   margin-top: 10px;
 }
 .recent a h1:hover {
-  color: #c9a654;
+  color: #820000;
 }
 .recent-details {
   display: flex;
@@ -1130,10 +1157,10 @@ hr {
 }
 .client-icon {
   font-size: 70px;
-  color: #eb5b32;
+  color: #203244;
 }
 .client {
-  border: 2px solid #eb5b32;
+  border: 2px solid #203244;
   width: 30%;
   height: 100%;
   border-radius: 30px;
@@ -1155,16 +1182,17 @@ hr {
 .area {
   height: 400px;
   margin-top: 30px;
-  background-color: #fffaee;
+  background-color: #c4cdd6;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .k {
-  background-image: url("https://biagiotti.qodeinteractive.com/wp-content/uploads/2019/08/faq-title-area-6.jpg");
+  background-image: url("https://preview.colorlib.com/theme/constructioncompany/assets/img/hero/about.jpg.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
   height: 500px;
   display: flex;
   justify-content: center;
@@ -1187,7 +1215,7 @@ hr {
   color: #fff;
 }
 footer {
-  background-color: #fdefe1;
+  background-color:#c4cdd6;
   height: 500px;
 }
 .bottomfoot {
@@ -1224,10 +1252,10 @@ footer {
   display: inline-block;
 }
 .bottomtwo a:hover {
-  color: #eb5b32;
+  color:#203244;
 }
 .bottomtext p:hover {
-  color: #eb5b32;
+  color:#203244;
 }
 .icon a {
   color: white;
@@ -1313,7 +1341,7 @@ footer {
   text-align: center;
 }
 .bottomtwo span {
-  color: #eb5b32;
+  color: #203244;
 }
 .bottomdiv {
   height: 200px;
@@ -1322,7 +1350,7 @@ footer {
   bottom: -400px;
 }
 .topfooticon {
-  background-color: #fdefe1;
+  background-color: #c4cdd6;
   height: 50px;
   display: flex;
   align-items: center;
@@ -1514,10 +1542,10 @@ form p {
   width: 500px;
 }
 #brown {
-  color: #ff2500 !important;
+  color: #820000 !important;
 }
 .brown {
-  color: #ff2500 !important;
+  color: #820000 !important;
 }
 /* Favs and basket(favs) */
 .favs {
@@ -1547,11 +1575,14 @@ input {
   text-align: center;
   font-size: 24px;
 }
+.line textarea::placeholder{
+  font-size: 24px;
+}
 .line form {
   padding-top: 50px;
 }
 .textareas {
-  width: 1240px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -1569,17 +1600,25 @@ input {
   width: 400px;
   height: 60px;
 }
-.line-inputs input::placeholder {
+.line-inputs input{
+
   padding: 20px;
 }
+.line-inputs input::placeholder{
+  font-size: 24px;
+}
+textarea::placeholder{
+  font-size: 24px;
+}
 .line textarea {
-  width: 1240px;
+ width: 100%;
   height: 100px;
+outline: none;
 }
 .line textarea:nth-of-type(2) {
   height: 200px;
 }
-textarea::placeholder {
+textarea {
   padding: 20px;
 }
 .contact-button {
@@ -1596,12 +1635,18 @@ textarea::placeholder {
 .homeslide {
   position: relative;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .hero {
-  background-image: url("https://pro-theme.com/html/viasun/assets/img/home-hero.jpg");
+  background-image: url("https://preview.colorlib.com/theme/constructioncompany/assets/img/hero/h1_hero.jpg.webp");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+    background-attachment: fixed;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1695,18 +1740,21 @@ textarea::placeholder {
   justify-content: center;
 }
 .swiper-slide .sambal {
-  width: 50%;
+  width: 70%;
 }
 .swiper-wrapper [class*="-active"] .sambal {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .swiper-wrapper [class*="-active"] .sambal h2 {
-  color: #ff2500;
+  color: #203244;
 }
 .swiper-button-prev,
 .swiper-button-next {
-  color: #ff2500 !important;
+
+  color:#203244  !important;
 }
+
+
 .gray {
   color: gray;
 }
@@ -2037,7 +2085,7 @@ button {
   border: none;
   /* border-radius: 50%; */
   color: #fff;
-  background-color: #deae91;
+  background-color:#203244;
 }
 .paginations {
   width: 100%;
@@ -2051,11 +2099,12 @@ button {
   border: 1px solid rgb(221, 218, 218);
 }
 .paginations .select {
-  background-color: #deae91;
+  background-color:#203244;
   border: none;
   color: #fff;
   height: 35px;
   font-size: 20px;
+ 
 }
 .mobile-views {
   display: flex;
@@ -2074,12 +2123,14 @@ option {
 }
 /* //blog */
 .blogcontent {
+  width: 100%;
   margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .blogcontent a {
+  width: 45%;
   margin: 20px 0;
 }
 .blogcontents {
@@ -2155,4 +2206,36 @@ width: 70px;
 }
 .favs{
   justify-content:center;
+}
+.contactBtn{
+ transition: 0.3s;
+padding: 10px;
+border: none;
+
+cursor: pointer;
+font-size: 24px;
+border-radius: 4px;
+
+
+}
+.submitBtn{
+  transition: 0.3s;
+ margin: 30px;
+padding: 15px;
+border: none;
+cursor: pointer;
+font-size: 24px;
+border-radius: 4px;
+}
+.contactBtn:hover{
+  background-color: #c4cdd6;
+}
+.submitBtn:hover{
+  background-color: #c4cdd6;
+}
+.all{
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }

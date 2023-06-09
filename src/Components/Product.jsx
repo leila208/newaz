@@ -8,7 +8,7 @@ import { useState } from "react";
 function Product({ product, dispatch, basket, fav }) {
   // let exist = basket.find((a) => a.id === product.id);
   // let already_exist = fav.find((a) => a.id === product.id);
-//  console.log(basket)
+  //  console.log(basket)
   // window.localStorage.setItem("fav", JSON.stringify(fav));
   window.localStorage.setItem("fav", JSON.stringify(fav));
   window.localStorage.setItem("basket", JSON.stringify(basket));
@@ -40,8 +40,8 @@ function Product({ product, dispatch, basket, fav }) {
       payload: product.id,
     });
     setFmodalshow(false);
-  }
- 
+  };
+
   return (
     <>
       <Pmodal
@@ -62,13 +62,12 @@ function Product({ product, dispatch, basket, fav }) {
         <Link to={`/details/${product.id}`}>
           <div className="sambal-image">
             <img src={product.image} />
-            <div className="sambal-rights">
+            {/* <div className="sambal-rights">
               <div className="sambal-right" onClick={(e) => e.preventDefault()}>
                 {!fav?.find((a) => a.id === product.id) ? (
                   <i
                     className="fa-solid fa-heart heart "
                     onClick={() => {
-                      // console.log(11111);
                       dispatch({
                         type: "FAV",
                         payload: product,
@@ -79,11 +78,6 @@ function Product({ product, dispatch, basket, fav }) {
                   <i
                     onClick={() => {
                       setFmodalshow(true);
-                      // console.log(2222);
-                      // dispatch({
-                      //   type: "REMOVE_FAV",
-                      //   payload: product.id,
-                      // });
                     }}
                     className="fa-solid fa-heart red"
                   ></i>
@@ -102,14 +96,12 @@ function Product({ product, dispatch, basket, fav }) {
                   ></i>
                 ) : (
                   <i
-                    onClick={
-                      () => setPmodalshow(true)
-                    }
+                    onClick={() => setPmodalshow(true)}
                     className="fa-solid fa-basket-shopping brown"
                   ></i>
                 )}
               </div>
-            </div>
+            </div> */}
           </div>
         </Link>
         <div className="sambal-content">
