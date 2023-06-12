@@ -31,7 +31,7 @@ function New() {
           //   clickable: true,
           // }}
           navigation={true}
-          slidesPerView={3}
+          slidesPerView={2}
         >
           {latest.map((a) => (
             <SwiperSlide key={a.id}>

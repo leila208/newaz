@@ -1,9 +1,40 @@
 import React from "react";
+import { useState } from "react";
 function Contact() {
+  const [contactForm, setContactForm] = useState({
+    username: "",
+    email: "",
+    phoneNumber: "",
+    subject: "",
+    message: "",
+  });
+  const handleInput = (e) => {
+    setContactForm({ ...contactForm, [e.target.name]: e.target.value });
+  };
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const a = await fetch("http://127.0.0.1:8000/account/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        username: contactForm.username,
+        email: contactForm.email,
+        phoneNumber: contactForm.phoneNumber,
+        subject: contactForm.subject,
+        message: contactForm.message,
+      }),
+    })
+      .then((a) => a.json())
+      .then((data) => data);
+  };
+  console.log(contactForm)
   return (
     <section className="photo">
       <div className="k">
-        <h1>Əlaqə</h1>
+        <p>Əlaqə</p>
       </div>
       <div className="container">
         <div className="contact">
@@ -65,20 +96,52 @@ function Contact() {
         <div className="line">
           <p>Operativ cavablandırma</p>
           <h1>Bizimlə əlaqə üçün</h1>
-          <form>
+          <form onSubmit={onSubmit}>
             <div className="line-inputs">
-              <input type="text" placeholder="Ad" />
-              <input type="email" placeholder="Email" />
-              <input type="number" placeholder="Nömrə" />
+              <input
+                type="text"
+                placeholder="Ad Soyad"
+                onChange={handleInput}
+                name="username"
+                autoComplete="off"
+                value={contactForm.username}
+              />
+              <input
+                type="email"
+                onChange={handleInput}
+                name="email"
+                autoComplete="off"
+                value={contactForm.email}
+                placeholder="Email"
+              />
+              <input
+                type="number"
+                placeholder="Nömrə"
+                onChange={handleInput}
+                name="phoneNumber"
+                autoComplete="off"
+                value={contactForm.phoneNumber}
+              />
             </div>
             <div className="textareas">
-              <textarea placeholder="Mövzu"></textarea>
-              <textarea placeholder="Mesaj"></textarea>
+              <textarea
+                placeholder="Mövzu"
+                onChange={handleInput}
+                name="subject"
+                autoComplete="off"
+                value={contactForm.subject}
+              ></textarea>
+              <textarea
+                placeholder="Mesaj"
+                onChange={handleInput}
+                name="message"
+                autoComplete="off"
+                value={contactForm.message}
+              ></textarea>
             </div>
-          </form>
-          <button className="submitBtn">
-           Mesajı göndər
-          </button>
+            <div className="submitDiv">
+            <button type="submit" className="submitBtn">Mesajı göndər</button>
+ </div>         </form>
         </div>
       </div>
     </section>

@@ -1,23 +1,34 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import CountUp from "react-countup";
+import { useState,useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 function AboutUs() {
+  //datani aboutdan goturmusem
+    const [about, setAbout] = useState([]);
+    useEffect(() => {
+      const getData = async () => {
+        let data = await fetch(`http://localhost:7700/about`).then((a) =>
+          a.json()
+        );
+        setAbout(data);
+      };
+      getData();
+    }, []);
   return (
     <>
       <section>
-        <div className="k">  
-            <h1>Haqqımızda</h1>
+        <div className="k">
+          <p>Haqqımızda</p>
         </div>
         <div className="us">
           <div className="container">
             <div className="us-details">
               <div className="us-text">
                 <h1>
-                  Müştərilərin <i className="orange">AZGP</i> haqqında
-                  fikirləri
+                  Müştərilərin <i className="orange">AZGP</i> haqqında fikirləri
                 </h1>
                 <p className="pcontent">
                   Siz də müştərilərimiz sırasına daxil olun
@@ -114,42 +125,22 @@ function AboutUs() {
           <div className="container">
             <h1>Komandamız</h1>
             <div className="artists">
-              <div className="artist">
+              {about.map((a)=>(
+                <div className="artist">
                 <div
                   className="artistimg"
                   data-aos="fade-right"
                   data-aos-duration="2000"
                 >
-                  <img src="https://cdn.bolvo.com/assets/viasun/team-item-1.jpg" />
+                    <img src={ a.image} />
                 </div>
                 <div className="artisttext">
-                  <h1>Saç ustası</h1>
+                    <h1>{ a.name}</h1>
                 </div>
               </div>
-              <div className="artist">
-                <div
-                  className="artistimg"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                >
-                  <img src="https://cdn.bolvo.com/assets/viasun/team-item-2.jpg" />
-                </div>
-                <div className="artisttext">
-                  <h1>Vizajist</h1>
-                </div>
-              </div>
-              <div className="artist">
-                <div
-                  className="artistimg"
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
-                >
-                  <img src="https://cdn.bolvo.com/assets/viasun/team-item-3.jpg" />
-                </div>
-                <div className="artisttext">
-                  <h1>Dermatoloq</h1>
-                </div>
-              </div>
+              ))}
+            
+            
             </div>
           </div>
         </div>
@@ -226,12 +217,7 @@ function AboutUs() {
                   <i className="fa-regular fa-file-chart-column client-icon"></i>
                 </div>
                 <div className="client-text">
-                  <CountUp
-                    end={250}
-                    start={0}
-                    duration={6.75}
-                    separator=" "
-                  />
+                  <CountUp end={250} start={0} duration={6.75} separator=" " />
                   <p>Proyekt</p>
                 </div>
               </div>

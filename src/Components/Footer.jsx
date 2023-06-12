@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="container">
-        <div className="foot"> 
+        <div className="foot">
           <div className="topfoot">
             <div className="topdiv">
               <div className="one">
@@ -12,7 +12,7 @@ function Footer() {
                   <i className="fa-solid fa-truck-fast"></i>
                 </div>
                 <div className="topfoottext">
-                  <h3>Pulsuz Çatdırılma</h3>
+                  <h3>Çatdırılma</h3>
                   <p>Şəhərdaxili</p>
                 </div>
               </div>
@@ -30,7 +30,7 @@ function Footer() {
                   <i className="fa-solid fa-headphones"></i>
                 </div>
                 <div className="topfoottext">
-                  <h3>7/24 Xidmətinizdə</h3>
+                  <h3>7/24 </h3>
                   <p>Texniki Dəstək</p>
                 </div>
               </div>
@@ -49,12 +49,11 @@ function Footer() {
             <div className="bottomfoot">
               <div className="bottomdiv">
                 <div className="bottomtwo">
-                  <div className="bottomlogo">
-                    
-                    <NavLink to="/">
-                      <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/472/7626693472_f489d8d0-9af0-4f8e-8e0e-fc39e87d9301.png?cb=1658791450" />
-                    </NavLink>
-                  </div>
+                  <NavLink to="/">                  <h1>
+                    <span>AZGP</span>
+                  </h1></NavLink>
+
+
                   <div className="two">
                     <div className="bottomicon">
                       <i className="fa-solid fa-location-dot"></i>
@@ -120,15 +119,6 @@ function Footer() {
     </footer>
   );
 }
-
 export default Footer;
-
-  /* <div className="container">
-        <ul className="flex">
-      
-        </ul>
-      </div> */
-
-     /*    */
 
 

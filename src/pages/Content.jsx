@@ -55,7 +55,7 @@ function Content() {
     <>
       <section>
         <div className="k">
-          <h1>Bloq</h1>
+          <p>Bloq</p>
         </div>
         <div className="container">
           <div className="blogdetail">
@@ -72,10 +72,10 @@ function Content() {
                 </div>
               </div>
               <div className="recent">
-                <h1>Ən yeni bloqlar</h1>
+                <div className="bloqhead">Ən yeni bloqlar</div>
                 {rated.slice(0, 4).map((a) => (
-                  <div key={a.id}>
-                    <div className="recent-blog">
+                  <>
+                    <div className="recent-blog" key={a.id}>
                       <div
                         className="recent-details "
                         data-aos="fade-left"
@@ -95,17 +95,7 @@ function Content() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </div>
-              <div className="tags ">
-                <h1>Bloq başlıqları</h1>
-                {rated.slice(0, 3).map((a) => (
-                  <Link to={`/blogdetails/${a.id}`} key={a.id}>
-                    <div className="tag">
-                      <p> #{a.type}</p>
-                    </div>
-                  </Link>
+                  </>
                 ))}
               </div>
             </div>

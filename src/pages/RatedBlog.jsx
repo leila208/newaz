@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 function RatedBlog() {
+  //datani contentsden goturmusem bu umumisidi
   const [rated, setRated] = useState([]);
   useEffect(() => {
     const getData = async () => {
       let data = await fetch("http://localhost:7700/contents").then((a) =>
         a.json()
       );
-      data = data.filter((a) => a.rating > 7);
+
       setRated(data);
     };
     getData();
@@ -42,10 +43,10 @@ function RatedBlog() {
                         </li>
                       </ul>
                     </div>
-                    <p className="pcontent row-content-text" id="brown">
+                    <p className="pcontent " id="brown">
                       {a.type}
                     </p>
-                    <h1>{a.name}</h1>
+                    <p className="rated-h1">{a.name}</p>
                   </div>
                   <div></div>
                 </div>

@@ -97,7 +97,7 @@ Makiyaj etmək üçün cəmi 5 dəqiqəniz varsa, diqqətinizi bir sahəyə yön
   return (
     <section>
       <div className="k">
-        <h1>Suallar</h1>
+        <p>Suallar</p>
       </div>
       <div className="container">
           <div>
