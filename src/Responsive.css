@@ -443,10 +443,14 @@ width: 100%;
   .navshops {
     display: flex;
     flex-direction: column;
+    
   }
   .navshop {
     width: 100%;
+
+
   }
+
   .navshop-details {
     display: flex;
     flex-direction: column;

@@ -12,8 +12,8 @@ function Footer() {
                   <i className="fa-solid fa-truck-fast"></i>
                 </div>
                 <div className="topfoottext">
-                  <h3>Çatdırılma</h3>
-                  <p>Şəhərdaxili</p>
+                  <h3>İş zamanı</h3>
+                  <p>Sürətli və keyfiyyətli</p>
                 </div>
               </div>
               <div className="one">
@@ -22,7 +22,7 @@ function Footer() {
                 </div>
                 <div className="topfoottext">
                   <h3>Məlumat Üçün</h3>
-                  <p>+375 60 02</p>
+                  <p>+994513126599</p>
                 </div>
               </div>
               <div className="one">
@@ -40,7 +40,7 @@ function Footer() {
                 </div>
                 <div className="topfoottext">
                   <h3>Mübadilələr</h3>
-                  <p>Asan Qaytarılma</p>
+                  <p>Asan mübadilə</p>
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@ function Footer() {
                       <i className="fa-solid fa-location-dot"></i>
                     </div>
                     <div className="bottomtext">
-                      <p> Yasamal r-nu, Həsənbəy Zərdabi</p>
+                      <p>Azure business center</p>
                     </div>
                   </div>
                   <div className="two">
@@ -67,7 +67,7 @@ function Footer() {
                       <i className="fa-solid fa-phone"></i>
                     </div>
                     <div className="bottomtext">
-                      <p>055 443 56 19</p>
+                      <p>+994513126599</p>
                     </div>
                   </div>
                   <div className="two">
@@ -75,7 +75,7 @@ function Footer() {
                       <i className="fa-solid fa-envelope"></i>
                     </div>
                     <div className="bottomtext">
-                      <p>beautyshop@gmail.com</p>
+                      <p>azgpenenginee@gmail.com</p>
                     </div>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ function Footer() {
                       <NavLink to="/faq">Tez-tez verilən suallar</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/cargo">Çatdırılma xidməti</NavLink>
+                      <NavLink to="/cargo">Bloq</NavLink>
                     </li>
                   </ul>
                 </div>
@@ -107,7 +107,7 @@ function Footer() {
                       <NavLink to="/faq">Suallarınız</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/cargo">Çatdırılma detalları</NavLink>
+                      <NavLink to="/cargo">Komandamız</NavLink>
                     </li>
                   </ul>
                 </div>

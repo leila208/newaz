@@ -49,10 +49,10 @@ function Contact() {
             <div className="small-text">
               <div className="contact-icon">
                 <i className="fa-regular fa-phone orange" />
-                <p className="pcontent">Qaynar xətt</p>
+                <p className="pcontent">Əlaqə:</p>
               </div>
               <div className="contact-information">
-                <p className="pcontent">*5858</p>
+                <p className="pcontent">+994513126599</p>
               </div>
             </div>
             <div className="small-text">
@@ -61,7 +61,7 @@ function Contact() {
                 <p className="pcontent ">E-mail:</p>
               </div>
               <div className="contact-information">
-                <p className="pcontent">beautyshop@gmail.com</p>
+                <p className="pcontent">azgpenginee@gmail.com</p>
               </div>
             </div>
             <div className="small-text">
@@ -70,7 +70,7 @@ function Contact() {
                 <p className="pcontent">Ünvan:</p>
               </div>
               <div className="contact-information">
-                <p className="pcontent">Yasamal r-nu, Həsənbəy Zərdabi</p>
+                <p className="pcontent">Azure business center</p>
               </div>
             </div>
             <div className="small-text">
@@ -79,7 +79,7 @@ function Contact() {
                 <p className="pcontent">İş günləri:</p>
               </div>
               <div className="contact-information">
-                <p className="pcontent">Hər gün</p>
+                <p className="pcontent">Hər içi hər gün</p>
               </div>
             </div>
             <div className="small-text">
@@ -88,7 +88,7 @@ function Contact() {
                 <p className="pcontent">İş saatları:</p>
               </div>
               <div className="contact-information">
-                <p className="pcontent">09:00 - 20:00</p>
+                <p className="pcontent">09:00 - 17:00</p>
               </div>
             </div>
           </div>

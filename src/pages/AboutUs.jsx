@@ -146,8 +146,8 @@ function AboutUs() {
         </div>
         <div className="about-flowers">
           <div className="about-flowers-details">
-            <p className="bolder">Çatdırılma xidmətimiz indi daha sərfəlidir</p>
-            <p className="pstyle">Sizlər üçün ən sərfəlisini etdik</p>
+            <p className="bolder">Komandamız indi daha böyükdür.</p>
+            <p className="pstyle">Sizlər üçün ən keyfiyyətli iş görürük.</p>
           </div>
         </div>
         <div className="friends">

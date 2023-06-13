@@ -9,18 +9,17 @@ function Homepage() {
   const data = {
     rows: [
       {
-        title: "Dərimizi necə nəmləndirmək olar?",
+        title: "Bizim hansı xidmətlərimiz var?",
         content:
-          "Xoşbəxtlikdən, dərini nəmləndirmək üçün ciddi tədbirlər tələb etməyən bir sıra yollar var. Nəmləndirici kremdən və yaxşı üz nəmləndiricilərindən tutmuş zərərli maddələri kəsməyə və daha çox su içməyə qədər, bunlar ən təsirli dərini nəmləndirmə üsullarıdır.",
+          "Ərazilərin geofiziki araşdırılması, qiymətli daş yataqlarının ən müasir qurğu və cihazlarla ölçülməsi və s. xidmətlərimiz var.",
       },
       {
-        title: "Məhsullar dəriyə uyğunluq baxımından sınaqdan keçirilirmi?",
-        content: `Bütün düsturlar dəriyə uyğunluğu üçün dermatoloji cəhətdən sınaqdan keçirilir. `,
+        title: "Bu xidmətlər hasnı region və bölgələrdə həyata keçirilir?",
+        content: `Artıq illərdiki öz kefyiyyəti ilə fəaliyyət göstərən AzGP istər ölkədaxili istərsə də ölkəxarici fəaliyyətləri ilə xidmətinizdədir. `,
       },
       {
-        title: "Həssas dəriyə qulluq zamanı xüsusilə nə vacibdir?",
-        content: `
-Həssas dəri irsi və ya qazanılmış ola bilər. Həssas dəri müəyyən məhsullara və ətraf mühitin təsirlərinə reaksiya verə bilər. `,
+        title: "Niyə biz?",
+        content: "Xidmətinin keyfiyyəti ilə sizlərin güvənini qazanan AzGP şirkəti öz təcrübəsi və peşəkarlığı ilə sahəsində öz sözünü deyir.",
       },
     ],
   };
