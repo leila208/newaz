@@ -5,13 +5,14 @@ function Content() {
   const [contents, setContents] = useState([]);
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch("http://localhost:7700/contents").then((a) =>
+      let data = await fetch("http://localhost:8000/blog/BlogView/").then((a) =>
         a.json()
       );
       setContents(data);
     };
     getInfo();
   }, []);
+  console.log(contents)
   const [searchInput, setSearchInput] = useState("");
   const searching = (e) => {
     setSearchInput(e.target.value);
@@ -19,10 +20,10 @@ function Content() {
   const [rated, setRated] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch("http://localhost:7700/contents").then((a) =>
+      let data = await fetch("http://localhost:8000/blog/BlogView/").then((a) =>
         a.json()
       );
-      data = data.filter((a) => a.status === "new");
+      // data = data.filter((a) => a.status === "new");
       setRated(data);
     };
     getData();
@@ -31,7 +32,7 @@ function Content() {
   const [postsPerPage, setPostsPerPage] = useState(4);
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
-  const currentPosts=contents.slice(firstPostIndex, lastPostIndex);
+  const currentPosts=contents.results?.slice(firstPostIndex, lastPostIndex);
    const [priceFilter, setPriceFilter] = useState([]);
    const pricing = (e) => {
      if (e.target.value === "az") {
@@ -73,7 +74,7 @@ function Content() {
               </div>
               <div className="recent">
                 <div className="bloqhead">Ən yeni bloqlar</div>
-                {rated.slice(0, 4).map((a) => (
+                {rated.results?.slice(0, 6).map((a) => (
                   <>
                     <div className="recent-blog" key={a.id}>
                       <div
@@ -124,7 +125,7 @@ function Content() {
               </div>
               <div className="blogcontent">
                 {currentPosts
-                  .filter((a) => {
+                  ?.filter((a) => {
                     if (searchInput == "") {
                       return a;
                     } else if (

@@ -5,7 +5,7 @@ function RatedBlog() {
   const [rated, setRated] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch("http://localhost:7700/contents").then((a) =>
+      let data = await fetch("http://localhost:8000/blog/BlogView/").then((a) =>
         a.json()
       );
 
@@ -21,7 +21,7 @@ function RatedBlog() {
             <h1>Ən çox oxunanlar</h1>
           </div>
           <div className="rateblogs">
-            {rated.slice(0, 3).map((a) => (
+            {rated.results?.slice(0, 3).map((a) => (
               <div
                 className="rateblog"
                 data-aos="fade-up"
@@ -46,7 +46,7 @@ function RatedBlog() {
                   <p className="rated-h1 pcontent" id="brown">
                     {a.name}
                   </p>
-                  <Link to={`/blogdetails/${a.id}`} key={a.id}>
+                  <Link to={`/blogdetails/${a.slug}`} key={a.slug}>
                     Daha ətraflı<i className="fa-solid fa-angles-right"></i>
                   </Link>
                 </div>

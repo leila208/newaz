@@ -1,37 +1,37 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 function BlogDetails() {
-  const { id } = useParams();
+  const { slug } = useParams();
   //datani contentsden goturmusem
   const [content, setContent] = useState({});
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch(`http://localhost:7700/contents/${id}`).then((a) =>
-        a.json()
-      );
+      let data = await fetch(
+        `http://localhost:8000/blog/BlogSingleView/${slug}`
+      ).then((a) => a.json());
       setContent(data);
     };
     getInfo();
   }, []);
+  console.log(slug)
+  console.log(content,'bizim data');
   return (
     <section>
-      <div className="k" key={content.id}>
-        <h1>{content.name}</h1>
-      </div>
+      {/* <div className="k" key={content.id}>
+        <h1>{content?.title}</h1>
+      </div> */}
       <div className="blogdetail">
         <div className="container">
           <div className="content">
             <div className="content-image">
-              <img src={content.image} />
+              <img src={content?.image} />
             </div>
             <div className="content-details">
-              <p id="brown" className=" t-t">
-                {content.type}
-              </p>
-              <h2 className="t-t">#{content.text}</h2>
+          
+              <h2 className="t-t">#{content?.title}</h2>
               <hr />
-              <p className="pcontent">{content.content}</p>
-              <p className="italic"> ({content.content?.length}söz)</p>
+              <p className="pcontent">{content?.content}</p>
+              <p className="italic"> ({content?.content?.length}söz)</p>
             </div>
             <h2 className="t-t">#Tövsiyə</h2>
             <hr />

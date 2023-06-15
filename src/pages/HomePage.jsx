@@ -40,17 +40,18 @@ function Homepage() {
   const [industry, setIndustry] = useState([]);
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch("http://localhost:7700/industry").then((a) =>
+      let data = await fetch("http://localhost:8000/blog/NewsView/").then((a) =>
         a.json()
       );
       setIndustry(data);
     };
     getInfo();
   }, []);
+  console.log(industry)
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch("http://localhost:7700/blogs").then((a) =>
+      let data = await fetch("http://localhost:8000/blog/NewsView/").then((a) =>
         a.json()
       );
       setBlogs(data);

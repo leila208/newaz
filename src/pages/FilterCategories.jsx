@@ -5,12 +5,12 @@ import Pagination from "../Components/Pagination";
 import Faq from "react-faq-component";
 import { connect } from "react-redux";
 function FilterCategories(props) {
-  const { id } = useParams();
+  const { slug } = useParams();
 //blogs istifade etmisem
   const [product, setProduct] = useState({});
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch(`http://localhost:7700/blogs/${id}`).then((a) =>
+      let data = await fetch(`http://localhost:8000/NewsView/${slug}`).then((a) =>
         a.json()
       );
       setProduct(data);

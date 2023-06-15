@@ -1,29 +1,39 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import CountUp from "react-countup";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 function AboutUs() {
   //datani aboutdan goturmusem
-    const [about, setAbout] = useState([]);
-    useEffect(() => {
-      const getData = async () => {
-        let data = await fetch(`http://localhost:7700/about`).then((a) =>
-          a.json()
-        );
-        setAbout(data);
-      };
-      getData();
-    }, []);
+  const [about, setAbout] = useState([]);
+  useEffect(() => {
+    const getData = async () => {
+      let data = await fetch(`http://localhost:8000/blog/EmployeeView/`).then(
+        (a) => a.json()
+      );
+      setAbout(data);
+    };
+    getData();
+  }, []);
+  const [partners, setPartners] = useState([]);
+  useEffect(() => {
+    const getData = async () => {
+      let data = await fetch(`http://localhost:8000/blog/PartnerView/`).then(
+        (a) => a.json()
+      );
+      setAbout(data);
+    };
+    getData();
+  }, []);
   return (
     <>
       <section>
         <div className="k">
           <p>Haqqımızda</p>
         </div>
-        <div className="us">
+        {/* <div className="us">
           <div className="container">
             <div className="us-details">
               <div className="us-text">
@@ -122,7 +132,7 @@ function AboutUs() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="our_artists">
           <div className="container">
             <h1>Komandamız</h1>
@@ -134,10 +144,12 @@ function AboutUs() {
                     data-aos="fade-right"
                     data-aos-duration="2000"
                   >
-                    <img src={a.image} />
+                    <img src={a?.image} />
                   </div>
                   <div className="artisttext">
-                    <h1>{a.name}</h1>
+                    <p>
+                      {a?.first_name} {a?.last_name} / {a?.job_title}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -153,34 +165,15 @@ function AboutUs() {
         <div className="friends">
           <div className="container">
             <div className="collobs">
-              <div
-                className="collob"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                <img src="https://www.logolynx.com/images/logolynx/c8/c8146e3289445926cf0998801a28aae1.jpeg" />
-              </div>
-              <div
-                className="collob"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                <img src="https://trademarks.justia.com/media/image.php?serial=87976261" />
-              </div>
-              <div
-                className="collob"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                <img src="https://logos-download.com/wp-content/uploads/2016/05/NARS_logo_small.png" />
-              </div>
-              <div
-                className="collob"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                <img src="https://th.bing.com/th/id/R.797dda482620a833c81c0a04af6c9964?rik=1hp%2bObYksYmpBA&pid=ImgRaw&r=0" />
-              </div>
+              {partners.map((a) => (
+                <div
+                  className="collob"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  <img src={a.image} />
+                </div>
+              ))}
             </div>
           </div>
         </div>

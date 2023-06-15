@@ -5,9 +5,10 @@
   text-decoration: none;
   list-style: none;
 }
+
 @media screen and (max-width: 1380px) {
   /* 15 */
-  .rateblog{
+  .rateblog {
     height: 400px;
   }
   .rateblog-img {
@@ -28,19 +29,28 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .recent-image{
+  .contact-map{
+    height: 600px;
+  }
+  .contactBtn{
+    font-size: 18px;
+  }
+  .all>li>a{
+    font-size: 14px;
+  }
+  .recent-image {
     height: 500px;
   }
-  .recent-image img{
+  .recent-image img {
     height: 100%;
   }
-   #hero-text {
+  #hero-text {
     font-size: 54px;
   }
-  .k h1{
+  .k h1 {
     font-size: 50px;
   }
-  .content-image img{
+  .content-image img {
     height: 500px;
   }
   /* 15 */
@@ -62,7 +72,7 @@
     align-items: center;
     justify-content: center;
   }
- 
+
   .small-text {
     display: flex;
     flex-direction: column;
@@ -135,66 +145,74 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .contact-information p{
-  font-size: 22px !important;
-}
-  .bottomtwo{
+  footer {
+    height: 800px;
+  }
+  .contact-information p {
+    font-size: 22px;
+  }
+  .contact-icon{
+    font-size: 20px
+  }
+
+  .bottomtwo {
     margin-top: 20px;
   }
-  .two{
-  justify-content: center;
+  .two {
+    justify-content: center;
   }
-   .bottomdiv{
+  .bottomdiv {
     text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
   }
-  .terri{
+  .terri {
     height: 300px;
   }
-  .team-text h1{
+  .team-text h1 {
     display: none;
   }
-  .team-text p{
+  .team-text p {
     margin-top: 10px;
   }
-  .teams{
+  .teams {
     height: 200px;
   }
-  .client-icon{
+  .client-icon {
     font-size: 50px;
   }
-  .client-text span{
+  .client-text span {
     font-size: 35px;
   }
-    .us-swiper{
+  .us-swiper {
     width: 100% !important;
   }
-    .swiper-about{
-    width:100% !important;
-  }
-     .us-swiper  .swiper-wrapper{
+  .swiper-about {
     width: 100% !important;
   }
-    .us-swiper  .swiper-slide{
+  .us-swiper .swiper-wrapper {
     width: 100% !important;
   }
-  .share-icon{
+  .us-swiper .swiper-slide {
+    width: 100% !important;
+  }
+  .share-icon {
     width: 90px;
     height: 90px;
   }
-  .content-details #brown, .content-details h2.content h2{
-font-size: 24px;
+  .content-details #brown,
+  .content-details h2.content h2 {
+    font-size: 24px;
   }
-.content .pcontent{
+  .content .pcontent {
     font-size: 24px !important;
   }
-  .content-image img{
+  .content-image img {
     height: 500px;
   }
-  .k h1{
+  .k h1 {
     font-size: 44px;
   }
   .blogcontent {
@@ -202,94 +220,96 @@ font-size: 24px;
     flex-direction: column;
     align-items: center;
   }
-  .recent-text h1{
+  .recent-text h1 {
     font-size: 30px;
     margin-top: 5px;
   }
-  .recent-image{
+  .recent-image {
     height: 400px;
   }
-  .recent{
+  .recent {
     display: flex;
     flex-direction: column;
-align-items: center;
+    align-items: center;
   }
-  .recent-blog{
+  .recent-blog {
     width: 90%;
   }
-  .team-text h1{
+  .team-text h1 {
     margin: 5px 0;
   }
-  .client-text span{
+  .client-text span {
     margin: 5px 0;
   }
-  .client{
+  .client {
     height: 80%;
   }
   .about-flowers-details p {
-  font-size: 40px;
-}
+    font-size: 40px;
+  }
   .our_artists h1 {
-  font-size: 24px;
-}
-  .artist{
+    font-size: 24px;
+  }
+  .artist {
     height: 250px;
   }
-   .fa-right-long{
+  .fa-right-long {
     display: none;
   }
-  .us-text{
+  .us-text {
     width: 100%;
     margin-bottom: 20px;
   }
-  .us-details{
+  .us-details {
     display: flex;
     flex-direction: column;
   }
-    .textareas textarea {
+  .textareas textarea {
     width: 100%;
   }
-   .contact {
+  .contact {
     display: flex;
     flex-direction: column;
-  
   }
   .small-text {
-row-gap: 10px;
+    row-gap: 10px;
   }
-  .k{
+  .k {
     height: 350px;
   }
-  .k p{
-  font-size: 44px;
-}
-    .rateblogs {
+  .k p {
+    font-size: 44px;
+  }
+  .rateblogs {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
-  .rateblog{
+  .rateblog {
     width: 90%;
   }
   .navshops {
     display: flex;
     align-items: center;
     flex-direction: column;
-  row-gap: 100px;
+    row-gap: 100px;
   }
   .navshop {
     width: 90%;
   }
-   #hero-text p {
+  #hero-text p {
     font-size: 44px;
   }
-  .organic-image i{
+  .organic-image i {
     font-size: 70px;
   }
-   .organic-text p {
+  .organic-text p {
     font-size: 45px;
   }
+  /* .bottomtwo li{
+    font-size: 16px !important;
+  } */
   /* 15 */
 
   .topdiv {
@@ -373,7 +393,6 @@ row-gap: 10px;
     text-align: center;
   }
 
-
   .one {
     width: 48%;
   }
@@ -384,7 +403,7 @@ row-gap: 10px;
   .bottomtwo {
     height: 300px;
   }
-  
+
   .input {
     width: 150px;
   }
@@ -481,90 +500,147 @@ row-gap: 10px;
     height: 300px;
     width: 500px;
   }
- 
+
   .contact-map,
   .contact-text {
     width: 100%;
   }
-  .contact-map{
+  .contact-map {
     height: 400px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  
-  .bottomtext p{
-margin-top: 5px;
+  .line form{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .two{
+   
+  .line form input{
+    height: 50px;
+  }
+  .line textarea{
+height: 80px;
+  }
+  .submitBtn{
+    font-size: 20px;
+  }
+
+   .line textarea:nth-of-type(2){
+height: 100px;
+  }
+  .line-inputs,.textareas{
+    width: 90%;
+  }
+  .contact-icon {
     display: flex;
     flex-direction: column;
   }
-  .bottomtwo{
+  .heading h1 {
+    font-size: 26px;
+  }
+  .content .pcontent {
+    font-size: 20px !important;
+  }
+  .sh h1 {
+    font-size: 26px;
+  }
+  .content-image img {
+    height: 300px;
+  }
+  .content h2 {
+    font-size: 24px;
+  }
+  .k h1 {
+    font-size: 30px;
+  }
+  .rated-icons ul {
+    display: none;
+  }
+  .recent-text h1 {
+    font-size: 24px;
+  }
+  .rateblog-img {
+    height: 150px;
+  }
+  .rateblog {
+    height: 300px;
+  }
+  .recent-image {
+    height: 300px;
+  }
+  .bottomtext p {
+    margin-top: 5px;
+  }
+  .two {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottomtwo {
     width: 100%;
   }
-  .artists{
+  .artists {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .artist{
+  .artist {
     width: 90%;
-    margin:20px 0;
+    margin: 20px 0;
   }
-  .about-flowers-details p{
+  .about-flowers-details p {
     font-size: 28px;
   }
-  .about-flowers{
+  .about-flowers {
     height: 300px;
   }
-  .collobs{
+  .collobs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
   }
-  .collob{
+  .collob {
     margin: 15px 0;
     width: 90%;
     height: 100px;
   }
-   .collob img{
+  .collob img {
     width: 100%;
     height: 100%;
   }
-  .clients{
+  .clients {
     height: 400px;
   }
-  .terri{
+  .terri {
     height: 400px;
   }
-  .team{
+  .team {
     margin: 10px 0;
   }
-    .team p {
+  .team p {
     display: block;
   }
-  .organic{
+  .organic {
     height: 300px;
   }
-  .organic-image i{
+  .organic-image i {
     font-size: 45px;
   }
-  .organic-image p{
+  .organic-image p {
     font-size: 35px;
   }
-  .navshops{
+  .navshops {
     row-gap: 50px;
   }
-  .navshop-image{
+  .navshop-image {
     height: 350px;
   }
-    .navshop-image img {
+  .navshop-image img {
     height: 100%;
   }
-  .hero{
+  .hero {
     height: 60vh;
   }
   /* 15 */
@@ -593,7 +669,7 @@ margin-top: 5px;
   .contactBtn {
     display: none;
   }
- 
+
   header {
     max-width: 425px;
   }
@@ -622,7 +698,7 @@ margin-top: 5px;
     height: 120px;
   }
   .organic-text p {
-    font-size: 38px;
+    font-size: 34px;
   }
   .organic-button button {
     width: 150px;
@@ -869,6 +945,7 @@ margin-top: 5px;
     text-align: center;
   }
   .line-inputs {
+    /* align-items: center; */
     display: flex;
     flex-direction: column;
   }
@@ -926,5 +1003,32 @@ margin-top: 5px;
   }
   .login-form form {
     width: 422px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .navshop-image{
+    height: 300px;
+  }
+   .navshop-image img{
+    height:100%;
+  }
+  .bottomtwo h1{
+    font-size: 24px;
+  }
+    .bottomtwo p{
+    font-size: 14px !important;
+  }
+   .bottomtwo li{
+    font-size: 14px !important;
+  }
+    .line h1{
+    font-size: 30px;
+  }
+
+  .contact-map {
+    height: 300px;
+  }
+  .contact-information p {
+    font-size: 16px !important;
   }
 }
