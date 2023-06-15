@@ -91,7 +91,7 @@ function Footer() {
                       <NavLink to="/faq">Tez-tez verilən suallar</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/cargo">Bloq</NavLink>
+                      <NavLink to="/blog">Bloq</NavLink>
                     </li>
                   </ul>
                 </div>
@@ -107,7 +107,7 @@ function Footer() {
                       <NavLink to="/faq">Suallarınız</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/cargo">Komandamız</NavLink>
+                      <NavLink to="/aboutus">Komandamız</NavLink>
                     </li>
                   </ul>
                 </div>

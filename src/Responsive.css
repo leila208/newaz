@@ -5,106 +5,127 @@
   text-decoration: none;
   list-style: none;
 }
-@media screen and (max-width: 1024px){
-  .contentBlog{
+@media screen and (max-width: 1380px) {
+  /* 15 */
+  .rateblog{
+    height: 400px;
+  }
+  .rateblog-img {
+    height: 200px;
+  }
+  .contact {
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-map {
+    width: 100%;
+  }
+  .contact-text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .recent-image{
+    height: 500px;
+  }
+  .recent-image img{
+    height: 100%;
+  }
+   #hero-text {
+    font-size: 54px;
+  }
+  .k h1{
+    font-size: 50px;
+  }
+  .content-image img{
+    height: 500px;
+  }
+  /* 15 */
+  .contentBlog {
     display: flex;
     flex-direction: column;
   }
-  .contentBlogİmage{
+  .contentBlogİmage {
     width: 100%;
   }
-  .contentBlogDetails{
+  .contentBlogDetails {
     width: 100%;
     margin: 10px 0;
   }
-  .contact{
 
-row-gap: 20px;
+  .one {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .contact-map{
-width: 100%;
-  }
-  .contact-text{
-    width: 100%;
-  }
-  .one{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  #hero-text{
-    font-size: 34px;
-  }
-  .small-text{
+ 
+  .small-text {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .line form{
+  .line form {
     display: flex;
     flex-direction: column;
   }
-  .line-inputs{
+  .line-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-   .line form input,textarea{
-    margin-top:10px;
-      border-bottom: 1px solid #203244;
-    width:100%;
-   }
-   .blogdetail{
-   
+  .line form input,
+  textarea {
+    margin-top: 10px;
+    border-bottom: 1px solid #203244;
+    width: 100%;
+  }
+  .blogdetail {
     display: flex;
     flex-direction: column;
-   }
-   .blogsearch{
+  }
+  .blogsearch {
     width: 100%;
-   }
-   .blogsearch .searching input{
+  }
+  .blogsearch .searching input {
     width: 100%;
-   }
-   .blogsearch .recent{
+  }
+  .blogsearch .recent {
     margin: 30px 0;
     text-align: center;
-   }
-    .recent-blog  {
-    
-width: 100%;
-   }
-   .recent-text{
+  }
+  .recent-blog {
+    width: 100%;
+  }
+  .recent-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 24px;
-   }
-   .recent-details{
+  }
+  .recent-details {
     display: flex;
     flex-direction: column;
-   }
-   .recent-image{
+  }
+  .recent-image {
     width: 100%;
-
-   }
-   .recent-image img{
+  }
+  .recent-image img {
     width: 100%;
     height: 100%;
-   }
+  }
 
-.tags{
-  text-align: center;
-  margin: 30px 0;
-}
-.tags a .tag{
-  width: 100%;
-}
- .contact {
+  .tags {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .tags a .tag {
+    width: 100%;
+  }
+  .contact {
     display: flex;
     flex-direction: column;
   }
@@ -114,23 +135,171 @@ width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  /* //bar */
-  
-   .topdiv{
-  display: none !important;
- }
-  .navshops {
+  .contact-information p{
+  font-size: 22px !important;
+}
+  .bottomtwo{
+    margin-top: 20px;
+  }
+  .two{
+  justify-content: center;
+  }
+   .bottomdiv{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    row-gap: 100px;
   }
-  .navshop {
-    width: 100%;
+  .terri{
+    height: 300px;
   }
-  .contactBtn{
+  .team-text h1{
     display: none;
   }
-  .navshop-image{
+  .team-text p{
+    margin-top: 10px;
+  }
+  .teams{
+    height: 200px;
+  }
+  .client-icon{
+    font-size: 50px;
+  }
+  .client-text span{
+    font-size: 35px;
+  }
+    .us-swiper{
+    width: 100% !important;
+  }
+    .swiper-about{
+    width:100% !important;
+  }
+     .us-swiper  .swiper-wrapper{
+    width: 100% !important;
+  }
+    .us-swiper  .swiper-slide{
+    width: 100% !important;
+  }
+  .share-icon{
+    width: 90px;
+    height: 90px;
+  }
+  .content-details #brown, .content-details h2.content h2{
+font-size: 24px;
+  }
+.content .pcontent{
+    font-size: 24px !important;
+  }
+  .content-image img{
+    height: 500px;
+  }
+  .k h1{
+    font-size: 44px;
+  }
+  .blogcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recent-text h1{
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  .recent-image{
+    height: 400px;
+  }
+  .recent{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+  }
+  .recent-blog{
+    width: 90%;
+  }
+  .team-text h1{
+    margin: 5px 0;
+  }
+  .client-text span{
+    margin: 5px 0;
+  }
+  .client{
+    height: 80%;
+  }
+  .about-flowers-details p {
+  font-size: 40px;
+}
+  .our_artists h1 {
+  font-size: 24px;
+}
+  .artist{
+    height: 250px;
+  }
+   .fa-right-long{
+    display: none;
+  }
+  .us-text{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .us-details{
+    display: flex;
+    flex-direction: column;
+  }
+    .textareas textarea {
+    width: 100%;
+  }
+   .contact {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .small-text {
+row-gap: 10px;
+  }
+  .k{
+    height: 350px;
+  }
+  .k p{
+  font-size: 44px;
+}
+    .rateblogs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .rateblog{
+    width: 90%;
+  }
+  .navshops {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  row-gap: 100px;
+  }
+  .navshop {
+    width: 90%;
+  }
+   #hero-text p {
+    font-size: 44px;
+  }
+  .organic-image i{
+    font-size: 70px;
+  }
+   .organic-text p {
+    font-size: 45px;
+  }
+  /* 15 */
+
+  .topdiv {
+    display: none !important;
+  }
+
+  .contactBtn {
+    display: none;
+  }
+  .navshop-image {
     height: 400px;
   }
   .navshop-details {
@@ -203,14 +372,8 @@ width: 100%;
   .organic {
     text-align: center;
   }
-  .rateblogs {
-    /* width: 710px; */
-    display: flex;
-    /* align-items: center; */
-    flex-direction: column;
-    justify-content: center;
-  }
- 
+
+
   .one {
     width: 48%;
   }
@@ -221,9 +384,7 @@ width: 100%;
   .bottomtwo {
     height: 300px;
   }
-  .bottomtwo:first-of-type {
-    display: none;
-  }
+  
   .input {
     width: 150px;
   }
@@ -268,54 +429,8 @@ width: 100%;
   .calendar {
     display: none;
   }
-  .blogcontent {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-  }
-  .rateblog {
-    width: 400px;
-    height: 600px;
-  }
-  .rateblog-img {
-    width: 400px;
-    height: 200px;
-  }
-  .rateblog-img img {
-    width: 100%;
-    height: 100%;
-  }
   .recent-details::before {
     display: none;
-  }
-  .contact {
-    display: flex;
-    justify-content: space-between;
-  }
-  .contact-map {
-    width: 45%;
-  }
-
-  .contact-map iframe {
-    width: 100%;
-    height: 600px;
-  }
-  .contact-text {
-    width: 40%;
-    height: 600px;
-  }
-  .small-text {
-    display: flex;
-    flex-direction: column;
-  }
-  .line form input {
-    width: 150px;
-  }
-  .textareas {
-    width: 768px;
-  }
-  .textareas textarea {
-    width: 80%;
   }
   .increase-right-nav {
     width: 47%;
@@ -347,7 +462,7 @@ width: 100%;
     width: 300px;
     text-align: center;
   }
-  .login{
+  .login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,56 +470,132 @@ width: 100%;
   .login-img {
     display: none;
   }
-  .user{
+  .user {
     display: flex;
     justify-content: center;
   }
-  .login-form{
+  .login-form {
     margin: 80px 0;
   }
-.login-form form{
+  .login-form form {
     height: 300px;
     width: 500px;
-   
-}
- .contact {
-    display: flex;
-    flex-direction: column;
   }
+ 
   .contact-map,
   .contact-text {
     width: 100%;
   }
+  .contact-map{
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 425px) {
-  .contact-text{
+  
+  .bottomtext p{
+margin-top: 5px;
+  }
+  .two{
+    display: flex;
+    flex-direction: column;
+  }
+  .bottomtwo{
+    width: 100%;
+  }
+  .artists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .artist{
+    width: 90%;
+    margin:20px 0;
+  }
+  .about-flowers-details p{
+    font-size: 28px;
+  }
+  .about-flowers{
+    height: 300px;
+  }
+  .collobs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .collob{
+    margin: 15px 0;
+    width: 90%;
+    height: 100px;
+  }
+   .collob img{
+    width: 100%;
+    height: 100%;
+  }
+  .clients{
+    height: 400px;
+  }
+  .terri{
+    height: 400px;
+  }
+  .team{
+    margin: 10px 0;
+  }
+    .team p {
+    display: block;
+  }
+  .organic{
+    height: 300px;
+  }
+  .organic-image i{
+    font-size: 45px;
+  }
+  .organic-image p{
+    font-size: 35px;
+  }
+  .navshops{
+    row-gap: 50px;
+  }
+  .navshop-image{
+    height: 350px;
+  }
+    .navshop-image img {
+    height: 100%;
+  }
+  .hero{
+    height: 60vh;
+  }
+  /* 15 */
+
+  .rateblog {
+    width: 100%;
+  }
+  .contact-text {
     margin-top: 30px;
   }
-  .topdiv{
-  display: none;
- }
-  .swiper-wrapper{
+  .topdiv {
+    display: none;
+  }
+  .swiper-wrapper {
     width: 425px !important;
   }
-   .swiper-slide{
+  .swiper-slide {
     width: 100% !important;
     display: flex;
     justify-content: center;
   }
-  
-  .sambal{
+
+  .sambal {
     width: 100% !important;
   }
-  .contactBtn{
+  .contactBtn {
     display: none;
   }
-  #hero-text h1 {
-    font-size: 34px;
-  }
+ 
   header {
     max-width: 425px;
-
   }
   .sector a {
     width: 22%;
@@ -430,7 +621,7 @@ width: 100%;
     width: 120px;
     height: 120px;
   }
-  .organic-text h1 {
+  .organic-text p {
     font-size: 38px;
   }
   .organic-button button {
@@ -443,12 +634,9 @@ width: 100%;
   .navshops {
     display: flex;
     flex-direction: column;
-    
   }
   .navshop {
     width: 100%;
-
-
   }
 
   .navshop-details {
@@ -459,15 +647,15 @@ width: 100%;
  left: 50%;
  transform: translate(-50%,-50%); */
   }
-  .rateblog {
+  /* .rateblog {
     margin-bottom: 10px;
     width: 400px;
     height: 666px;
-  }
+  } */
   .heading {
     padding: 70px 0;
   }
-  
+
   .input {
     width: 80px;
   }
@@ -481,24 +669,24 @@ width: 100%;
   .rateblogs {
     max-width: 425px;
   }
-  .rateblog {
+  /* .rateblog {
     width: 100%;
-  }
-  .rateblog {
+  } */
+  /* .rateblog {
     width: 300px;
     height: 600px;
-  }
-  .rateblog-img {
+  } */
+  /* .rateblog-img {
     width: 300px;
     height: 200px;
   }
   .rateblog-img img {
     width: 100%;
     height: 100%;
-  }
-  .rated-details {
+  } */
+  /* .rated-details {
     max-width: 300px;
-  }
+  } */
   .styles_faq-row-wrapper__3vA1D
     .styles_row-body__1NvUo
     .styles_faq-row__2YF3c
@@ -684,12 +872,12 @@ width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .line-inputs input{
+  .line-inputs input {
     margin: 10px 0;
   }
-  .line form input {
+  /* .line form input {
     width: 340px;
-  }
+  } */
   .textareas {
     max-width: 425px;
   }
@@ -704,13 +892,6 @@ width: 100%;
   }
   .artisttext h1 {
     font-size: 20px;
-  }
-  .artist h1 {
-    display: none;
-  }
-  .about-flowers {
-    max-width: 425px;
-    margin: 10px 0;
   }
   .clients {
     display: flex;
@@ -730,13 +911,10 @@ width: 100%;
     flex-direction: column;
     margin: 50px 0;
   }
-  .team p {
-    display: none;
-  }
   .topdiv {
     bottom: -110px;
   }
-  .favs{
+  .favs {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -746,7 +924,7 @@ width: 100%;
     height: 700px;
     margin: 100px 0;
   }
-  .login-form form{
+  .login-form form {
     width: 422px;
-  };
+  }
 }

@@ -26,7 +26,7 @@ function Header(props) {
   return (
     <>
       <header className="header-section d-none d-xl-block">
-        <Modal />
+        {/* <Modal /> */}
         {/* <div className="mobile-menu"> */}
 
         <div className={istoggled ? "mobile-menu mobile-menu-open" : ""}>

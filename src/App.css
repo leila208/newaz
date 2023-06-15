@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&family=Rubik:wght@700&family=Stoke&display=swap");
 * {
+  border: 1px solid red;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,9 +41,12 @@ body {
 }
 .collob {
   width: 18%;
+  height: 200px;
 }
 .collob img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .variant {
   text-align: center;
@@ -280,8 +284,9 @@ a:hover {
   font-size: 24px !important;
   padding:  15px  !important;
 }
-.organic-text span {
-  color: #eb5b32;
+.organic-text p {
+  font-size: 55px;
+  font-weight: 600;
 }
 .faq {
   margin-bottom: 80px;
@@ -403,11 +408,12 @@ header {
     Helvetica Neue, Arial, Noto Sans, sans-serif !important;
   font-style: normal;
 }
+
 .all > li > a {
-  margin: 20px;
+margin: 20px;
   color: #fff !important;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   font-family: Fauna One, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, sans-serif !important;
   font-style: normal;
@@ -461,6 +467,7 @@ header {
   object-position: top;
 }
 #hero-text {
+  text-align: center;
   font-size: 100px;
   font-weight: 600;
   color: #fff;
@@ -547,7 +554,8 @@ label {
 }
 .contact-map{
   width: 45%;
-  height: 600px;
+
+  /* height: 600px; */
 }
 .contact-map iframe{
   width: 100%;
@@ -571,6 +579,7 @@ label {
 .small-text:not(:nth-last-of-type(1)) {
   border-bottom: 1px solid #a9b2bb;
 }
+
 .photo {
   background-image: url("https://goex.az/site/assets/images/back-1.png");
   background-position: center;
@@ -782,36 +791,51 @@ hr {
   padding-bottom: 30px;
 }
 .rateblog {
+
+  width: 30%;
   margin-bottom: 10px;
-  height: 566px;
+  height: 500px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-bottom: 4px solid #cfd8dc;
 }
 .rateblogs a{
   width:30% !important;
 }
-.rateblog{
+/* .rateblog{
 width: 100%;
-}
+} */
 .rateblog:hover {
   border: none;
 }
 .rateblog-img {
-  /* width: 400px; */
+  width: 100%;
+ 
   height: 260px;
   overflow: hidden;
 }
-.rated-details {
+.rateblog-img img {
+  width: 100%;
  
-  /* width: 400px; */
+}
+.rated-details{
+  padding: 20px;
+}
+
+/* .rated-details a{
+  display: inline-block;
+margin-top: 10px;
+} */
+/* .rated-details {
+ 
+
   height: 300px;
   padding: 20px;
   color: #000;
   position: relative;
-}
+} */
 .rated-details::after {
   content: "";
-  top: 101%;
+  top: 100%;
   left: 0;
   position: absolute;
   height: 4px;
@@ -856,7 +880,7 @@ width: 100%;
   color: #820000;
 }
 .rateblog-img img {
-  width: 100%;
+
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
@@ -884,8 +908,8 @@ width: 100%;
   height: 50px;
 }
 .pcontent {
-   font-size: 24px !important;
-  font-weight: 500;
+   font-size: 26px !important;
+  font-weight: 600;
 }
 .paragraph {
   font-size: 30px;
@@ -1014,7 +1038,7 @@ width: 100%;
 }
 .recent-image img {
   width: 100%;
-  height: 70px;
+  height: 100px;
   object-fit: cover;
 }
 .recent-text {
@@ -1065,17 +1089,19 @@ width: 100%;
   font-size: 34px;
 }
 .us {
+  margin-top: 50px;
   background-color: whitesmoke;
-  height: 60vh;
   display: flex;
   align-items: center;
 }
 .us-details {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 0;
 }
 .us-text {
+  text-align: center;
   font-size: 20px;
 }
 .us-text p {
@@ -1106,13 +1132,13 @@ width: 100%;
   text-align: center;
 }
 .our_artists h1 {
-  margin: 30px;
+  margin: 10px;
   font-size: 30px;
 }
 .artists {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .artist {
   width: 32%;
@@ -1125,7 +1151,7 @@ width: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
 .teams {
   height: 300px;
@@ -1137,9 +1163,11 @@ width: 100%;
   height: 300px;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 .team-text {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1210,7 +1238,7 @@ width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
+text-align: center;
   height: 500px;
   display: flex;
   justify-content: center;
@@ -1234,7 +1262,7 @@ width: 100%;
 }
 footer {
   background-color:#c4cdd6;
-  height: 500px;
+  height: 800px;
 }
 .bottomfoot {
   padding-top: 50px;
@@ -1243,7 +1271,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 22%;
+  /* width: 22%; */
   gap: 10px;
 }
 .bottomdiv {
@@ -1262,7 +1290,14 @@ footer {
   margin: 15px;
   font-size: 18px;
 }
+.bottomtext p{
+  font-size: 20px;
+   font-family:   Fauna One, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif !important;
+}
 .bottomtwo li {
+  font-family:   Fauna One, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif !important;
   font-size: 20px;
   margin: 15px;
 }
@@ -1310,7 +1345,7 @@ footer {
   margin: 10px;
 }
 .about-flowers-details p {
-  font-size: 30px;
+  font-size: 50px;
 }
 .orders {
   display: flex;
@@ -1619,12 +1654,13 @@ input {
   justify-content: space-between;
 }
 .line form input {
-  width: 400px;
+  border: 1px solid gray;
+  width:30%;
   height: 60px;
 }
 .line-inputs input{
 
-  padding: 20px;
+  padding: 20px 0 20px 20px;
 }
 .line-inputs input::placeholder{
   font-size: 24px;
@@ -1633,6 +1669,7 @@ textarea::placeholder{
   font-size: 24px;
 }
 .line textarea {
+    border: 1px solid gray;
  width: 100%;
   height: 100px;
 outline: none;
@@ -1654,9 +1691,9 @@ textarea {
   align-items: center;
   margin: 10px 0;
 }
-.homeslide {
+/* .homeslide {
   position: relative;
-}
+} */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -1799,7 +1836,7 @@ input::-webkit-inner-spin-button {
 }
 /* //navshop */
 .navshops {
-  padding: 100px 0 0 0;
+margin-top: 50px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1824,8 +1861,13 @@ input::-webkit-inner-spin-button {
 }
 .navshop-details p {
   margin: 15px 0;
+  font-size: 34px;
+  font-weight: 600;
 }
-
+.navshop-toptext p {
+  font-size: 34px;
+  font-weight: 600;
+}
 #green {
   font-size: 20px;
   display: inline-block;
@@ -2251,7 +2293,7 @@ border-radius: 4px;
 .navshop-toptext h1{
   color: #161c23;
 }
-.navshop-details>h1{
+.navshop-details>p{
   color: #fff;
 }
 .Btn{
@@ -2297,8 +2339,30 @@ form input,textarea{
   font-size: 26px;
 }
 .rated-h1{
-  margin-top:5px;
+  margin:5px 0;
   font: normal 500 26px "Fauna-One";
+}
+.rated-details a{
+font-family:   Fauna One, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif !important;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+.rated-details .fa-angles-right{
+  margin-left: 3px;
+  font-size: 16px !important;
+}
+.rated-details{
+  transition: 0.3s;
+}
+.rated-details:hover a{
+  color: #820000;
+  transition: 0.3s;
+}
+.rated-details:hover .fa-angles-right{
+  transition: 0.3s;
+  margin-left: 5px;
 }
 .contentBlog{
   width: 100%;

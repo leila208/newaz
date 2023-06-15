@@ -78,8 +78,8 @@ function Content() {
                     <div className="recent-blog" key={a.id}>
                       <div
                         className="recent-details "
-                        data-aos="fade-left"
-                        data-aos-duration="3000"
+                        // data-aos="fade-left"
+                        // data-aos-duration="3000"
                       >
                         <div className="recent-image">
                           <img src={a.image} />
@@ -134,38 +134,36 @@ function Content() {
                     }
                   })
                   .map((a) => (
-                    <Link to={`/blogdetails/${a.id}`} key={a.id}>
-                      <div
-                        className="rateblog"
-                        data-aos="fade-up"
-                        data-aos-duration="3000"
-                      >
-                        <div className="rateblog-img">
-                          <img src={a.image} />
-                        </div>
-                        <div className="rated-details">
-                          <div className="rated-icons">
-                            <i
-                              className="fa-solid fa-right-long "
-                              id="brown"
-                            ></i>
-                            <ul>
-                              <li>
-                                <i className="fa-brands fa-facebook-f"></i>
-                              </li>
-                              <li>
-                                <i className="fa-brands fa-twitter"></i>
-                              </li>
-                            </ul>
-                          </div>
-                          <p className="pcontent row-content-text" id="brown">
-                            {a.type}
-                          </p>
-                          <h1>{a.name}</h1>
-                        </div>
-                        <div></div>
+                    <div
+                      className="rateblog"
+                      data-aos="fade-up"
+                      data-aos-duration="3000"
+                    >
+                      <div className="rateblog-img">
+                        <img src={a.image} />
                       </div>
-                    </Link>
+                      <div className="rated-details">
+                        <div className="rated-icons">
+                          <i className="fa-solid fa-right-long " id="brown"></i>
+                          <ul>
+                            <li>
+                              <i className="fa-brands fa-facebook-f"></i>
+                            </li>
+                            <li>
+                              <i className="fa-brands fa-twitter"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        < p className="rated-h1 pcontent" id="brown">{a.name}</p>
+                        <Link to={`/blogdetails/${a.id}`} key={a.id}>
+                          {" "}
+                          Daha ətraflı
+                          <i className="fa-solid fa-angles-right"></i>
+                        </Link>
+                      </div>
+                      <div></div>
+                    </div>
                   ))}
               </div>
             </div>

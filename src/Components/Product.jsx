@@ -4,7 +4,9 @@ import React from "react";
 function Product({ product, dispatch, basket, fav }) {
   return (
     <>
-      <div className="sambal" data-aos="fade-up" data-aos-duration="3000">
+      <div className="sambal"
+        // data-aos="fade-up" data-aos-duration="3000"
+      >
         <Link to={`/details/${product.id}`}>
           <div className="sambal-image">
             <img src={product.image} />

@@ -35,89 +35,91 @@ function AboutUs() {
                 </p>
                 <i className="fa-solid fa-right-long" />
               </div>
-              <Swiper
-                loop="true"
-                // autoplay={{
-                //   delay: 1500,
-                // }}
-                // pagination={{
-                //   clickable: true,
-                // }}
-                // navigation={true}
-                modules={[Autoplay, Navigation, Pagination]}
-                slidesPerView={1}
-                className="swiper-about"
-              >
-                <SwiperSlide>
-                  <div className="us-right-text">
-                    <div className="us-up-text">
-                      <p>
-                        Buradan alış-veriş etdiyimə görə çox məmnunam.Hər kəsə
-                        buradan alış-veriş etməyi tövsiyə edirəm.Məhsullar çox
-                        keyfiyyətlidir və qiymətlər çox sərfəlidir.Məhsullar
-                        təbiətə heç bir zərər vermədən hazırlanır və tamamilə
-                        orqanikdir.Ən əsası isə komanda çox gülərüzdür və daim
-                        müştəri ilə maraqlanırlar.
-                      </p>
-                    </div>
-                    <div className="us-bottom-text">
-                      <div className="us-image">
-                        <img src="https://shtheme.org/demosd/betty/wp-content/uploads/2022/02/t1.png" />
+              <div className="us-swiper">
+                <Swiper
+                  loop="true"
+                  // autoplay={{
+                  //   delay: 1500,
+                  // }}
+                  // pagination={{
+                  //   clickable: true,
+                  // }}
+                  // navigation={true}
+                  modules={[Autoplay, Navigation, Pagination]}
+                  slidesPerView={1}
+                  className="swiper-about"
+                >
+                  <SwiperSlide>
+                    <div className="us-right-text">
+                      <div className="us-up-text">
+                        <p>
+                          Buradan alış-veriş etdiyimə görə çox məmnunam.Hər kəsə
+                          buradan alış-veriş etməyi tövsiyə edirəm.Məhsullar çox
+                          keyfiyyətlidir və qiymətlər çox sərfəlidir.Məhsullar
+                          təbiətə heç bir zərər vermədən hazırlanır və tamamilə
+                          orqanikdir.Ən əsası isə komanda çox gülərüzdür və daim
+                          müştəri ilə maraqlanırlar.
+                        </p>
                       </div>
-                      <div className="us-bottom">
-                        <p className="pcontent">Nuray İsgəndərli</p>
-                        <p>müştəri</p>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="us-right-text">
-                    <div className="us-up-text">
-                      <p>
-                        Buradan alış-veriş etdiyimə görə çox məmnunam.Hər kəsə
-                        buradan alış-veriş etməyi tövsiyə edirəm.Məhsullar çox
-                        keyfiyyətlidir və qiymətlər çox sərfəlidir.Məhsullar
-                        təbiətə heç bir zərər vermədən hazırlanır və tamamilə
-                        orqanikdir.Ən əsası isə komanda çox gülərüzdür və daim
-                        müştəri ilə maraqlanırlar.
-                      </p>
-                    </div>
-                    <div className="us-bottom-text">
-                      <div className="us-image">
-                        <img src="https://shtheme.org/demosd/betty/wp-content/uploads/2022/02/t3.png" />
-                      </div>
-                      <div className="us-bottom">
-                        <p className="pcontent">Aysu Əhmədli</p>
-                        <p>müştəri</p>
+                      <div className="us-bottom-text">
+                        <div className="us-image">
+                          <img src="https://shtheme.org/demosd/betty/wp-content/uploads/2022/02/t1.png" />
+                        </div>
+                        <div className="us-bottom">
+                          <p className="pcontent">Nuray İsgəndərli</p>
+                          <p>müştəri</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="us-right-text">
-                    <div className="us-up-text">
-                      <p>
-                        Buradan alış-veriş etdiyimə görə çox məmnunam.Hər kəsə
-                        buradan alış-veriş etməyi tövsiyə edirəm.Məhsullar çox
-                        keyfiyyətlidir və qiymətlər çox sərfəlidir.Məhsullar
-                        təbiətə heç bir zərər vermədən hazırlanır və tamamilə
-                        orqanikdir.Ən əsası isə komanda çox gülərüzdür və daim
-                        müştəri ilə maraqlanırlar.
-                      </p>
-                    </div>
-                    <div className="us-bottom-text">
-                      <div className="us-image">
-                        <img src="https://avenue-sandbox.mybigcommerce.com/product_images/uploaded_images/newsletter-right.jpg" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="us-right-text">
+                      <div className="us-up-text">
+                        <p>
+                          Buradan alış-veriş etdiyimə görə çox məmnunam.Hər kəsə
+                          buradan alış-veriş etməyi tövsiyə edirəm.Məhsullar çox
+                          keyfiyyətlidir və qiymətlər çox sərfəlidir.Məhsullar
+                          təbiətə heç bir zərər vermədən hazırlanır və tamamilə
+                          orqanikdir.Ən əsası isə komanda çox gülərüzdür və daim
+                          müştəri ilə maraqlanırlar.
+                        </p>
                       </div>
-                      <div className="us-bottom">
-                        <p className="pcontent">Aysu Əhmədli</p>
-                        <p>müştəri</p>
+                      <div className="us-bottom-text">
+                        <div className="us-image">
+                          <img src="https://shtheme.org/demosd/betty/wp-content/uploads/2022/02/t3.png" />
+                        </div>
+                        <div className="us-bottom">
+                          <p className="pcontent">Aysu Əhmədli</p>
+                          <p>müştəri</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="us-right-text">
+                      <div className="us-up-text">
+                        <p>
+                          Buradan alış-veriş etdiyimə görə çox məmnunam.Hər kəsə
+                          buradan alış-veriş etməyi tövsiyə edirəm.Məhsullar çox
+                          keyfiyyətlidir və qiymətlər çox sərfəlidir.Məhsullar
+                          təbiətə heç bir zərər vermədən hazırlanır və tamamilə
+                          orqanikdir.Ən əsası isə komanda çox gülərüzdür və daim
+                          müştəri ilə maraqlanırlar.
+                        </p>
+                      </div>
+                      <div className="us-bottom-text">
+                        <div className="us-image">
+                          <img src="https://avenue-sandbox.mybigcommerce.com/product_images/uploaded_images/newsletter-right.jpg" />
+                        </div>
+                        <div className="us-bottom">
+                          <p className="pcontent">Aysu Əhmədli</p>
+                          <p>müştəri</p>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
         </div>
@@ -125,22 +127,20 @@ function AboutUs() {
           <div className="container">
             <h1>Komandamız</h1>
             <div className="artists">
-              {about.map((a)=>(
+              {about.map((a) => (
                 <div className="artist">
-                <div
-                  className="artistimg"
-                  data-aos="fade-right"
-                  data-aos-duration="2000"
-                >
-                    <img src={ a.image} />
+                  <div
+                    className="artistimg"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                  >
+                    <img src={a.image} />
+                  </div>
+                  <div className="artisttext">
+                    <h1>{a.name}</h1>
+                  </div>
                 </div>
-                <div className="artisttext">
-                    <h1>{ a.name}</h1>
-                </div>
-              </div>
               ))}
-            
-            
             </div>
           </div>
         </div>
@@ -155,28 +155,28 @@ function AboutUs() {
             <div className="collobs">
               <div
                 className="collob"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-duration="3000"
               >
                 <img src="https://www.logolynx.com/images/logolynx/c8/c8146e3289445926cf0998801a28aae1.jpeg" />
               </div>
               <div
                 className="collob"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-duration="3000"
               >
                 <img src="https://trademarks.justia.com/media/image.php?serial=87976261" />
               </div>
               <div
                 className="collob"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="3000"
               >
                 <img src="https://logos-download.com/wp-content/uploads/2016/05/NARS_logo_small.png" />
               </div>
               <div
                 className="collob"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="3000"
               >
                 <img src="https://th.bing.com/th/id/R.797dda482620a833c81c0a04af6c9964?rik=1hp%2bObYksYmpBA&pid=ImgRaw&r=0" />

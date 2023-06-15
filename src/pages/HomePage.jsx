@@ -69,7 +69,7 @@ function Homepage() {
                 <img src={a.image} />
               </div>
               <div className="navshop-details">
-                <h1>{a.name}</h1>
+                <p>{a.name}</p>
               </div>
             </div>
           ))}
@@ -80,7 +80,7 @@ function Homepage() {
           <i className="fa-solid fa-industry"></i>
         </div>
         <div className="organic-text">
-          <h1>Biz Aparıcı Mühəndislik Sənayesiyik</h1>
+          <p>Biz Aparıcı Mühəndislik Sənayesiyik</p>
         </div>
       </div>
       <div className="container">
@@ -92,7 +92,7 @@ function Homepage() {
               </div>
               <div className="navshop-details">
                 <div className="navshop-toptext">
-                  <h1>{blog.name}</h1>
+                  <p>{blog.name}</p>
                 </div>
                 <Link to={`/blogs/${blog.id}`}>
                   {" "}
