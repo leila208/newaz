@@ -5,7 +5,7 @@ function Content() {
   const [contents, setContents] = useState([]);
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch("http://localhost:8000/blog/BlogView/").then((a) =>
+      let data = await fetch("http://localhost:7700/contents").then((a) =>
         a.json()
       );
       setContents(data);
@@ -20,7 +20,7 @@ function Content() {
   const [rated, setRated] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch("http://localhost:8000/blog/BlogView/").then((a) =>
+      let data = await fetch("http://localhost:7700/contents").then((a) =>
         a.json()
       );
       // data = data.filter((a) => a.status === "new");

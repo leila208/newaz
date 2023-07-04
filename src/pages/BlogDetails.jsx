@@ -1,19 +1,19 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 function BlogDetails() {
-  const { slug } = useParams();
+  const { id } = useParams();
   //datani contentsden goturmusem
   const [content, setContent] = useState({});
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch(
-        `http://localhost:8000/blog/BlogSingleView/${slug}`
-      ).then((a) => a.json());
+      let data = await fetch(`http://localhost:7700/contents/${id}`).then((a) =>
+        a.json()
+      );
       setContent(data);
     };
     getInfo();
   }, []);
-  console.log(slug)
+  // console.log(slug)
   console.log(content,'bizim data');
   return (
     <section>

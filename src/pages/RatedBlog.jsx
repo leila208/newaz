@@ -5,7 +5,7 @@ function RatedBlog() {
   const [rated, setRated] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch("http://localhost:8000/blog/BlogView/").then((a) =>
+      let data = await fetch("http://localhost:7700/blogs").then((a) =>
         a.json()
       );
 
@@ -13,6 +13,7 @@ function RatedBlog() {
     };
     getData();
   }, []);
+  console.log(rated)
   return (
     <>
       <div className="ratedblog">
@@ -24,8 +25,8 @@ function RatedBlog() {
             {rated.results?.slice(0, 3).map((a) => (
               <div
                 className="rateblog"
-                data-aos="fade-up"
-                data-aos-duration="3000"
+                // data-aos="fade-up"
+                // data-aos-duration="3000"
               >
                 <div className="rateblog-img">
                   <img src={a.image} />
@@ -46,7 +47,7 @@ function RatedBlog() {
                   <p className="rated-h1 pcontent" id="brown">
                     {a.name}
                   </p>
-                  <Link to={`/blogdetails/${a.slug}`} key={a.slug}>
+                  <Link to={`/blogdetails/${a.id}`} key={a.id}>
                     Daha ətraflı<i className="fa-solid fa-angles-right"></i>
                   </Link>
                 </div>

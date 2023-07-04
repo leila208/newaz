@@ -10,8 +10,8 @@ function AboutUs() {
   const [about, setAbout] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch(`http://localhost:8000/blog/EmployeeView/`).then(
-        (a) => a.json()
+      let data = await fetch(`http://localhost:7700/contents`).then((a) =>
+        a.json()
       );
       setAbout(data);
     };

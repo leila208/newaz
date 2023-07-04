@@ -23,12 +23,16 @@
   }
   .contact-map {
     width: 100%;
+    height: 600px;
   }
   .contact-text {
     width: 100%;
   }
 }
 @media screen and (max-width: 1024px) {
+  .organic-text{
+    text-align: center;
+  }
   .contact-map{
     height: 600px;
   }
@@ -352,7 +356,7 @@
     display: block;
   }
   .mobile-menu {
-    background-color: #221d1c;
+ 
     padding: 70px 0 0 0;
     text-align: center;
     width: 250px;
@@ -511,6 +515,15 @@
 }
 
 @media screen and (max-width: 425px) {
+  .contentBlogİmage{
+    height: 400px;
+  }
+.mobile-menu{
+  width: 100%;
+}
+.mobile-menu a{
+font-size: 33px !important;
+}
   .line form{
      display: flex;
     flex-direction: column;
@@ -1031,4 +1044,55 @@ height: 100px;
   .contact-information p {
     font-size: 16px !important;
   }
+  #hero-text p{
+    font-size: 30px;
+  }
+  .k p{
+    font-size: 30px;
+  }
+  .navshop-details p{
+     font-size: 28px;
+  }
+  .Btn{
+    padding: 5px;
+    font-size: 20px;
+  }
+  .navshop-details{
+    padding: 0;
+    top: 10px;
+    left: 10px;
+  }
+  .organic-image i {
+    font-size: 30px;
+  }
+  .organic-text p{
+    
+    font-size: 28px;
+  }
+  .faq-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact{
+     row-gap: 100px;
+  }
+  .paginations .select{
+    width: 100%;
+  }
+  .faq-row,.row-title {
+    width: 100%;
+  }
+  .row-title-text,.row-content-text{
+   font-size: 20px !important;
+  }
+ .row-title {
+    color: black;
+ 
+    padding: 0 !important;
+}
+.contentBlogİmage {
+  height: 300px;
+}
 }
