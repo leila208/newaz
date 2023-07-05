@@ -10,8 +10,8 @@ function AboutUs() {
   const [about, setAbout] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch(`http://localhost:7700/contents`).then((a) =>
-        a.json()
+      let data = await fetch(`http://localhost:8000/blog/EmployeeView/`).then(
+        (a) => a.json()
       );
       setAbout(data);
     };
@@ -20,7 +20,7 @@ function AboutUs() {
   const [partners, setPartners] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch(`http://localhost:8000/blog/PartnerView/`).then(
+      let data = await fetch(`http://localhost:8000/blog/partnersView/`).then(
         (a) => a.json()
       );
       setAbout(data);
@@ -33,106 +33,6 @@ function AboutUs() {
         <div className="k">
           <p>Haqqımızda</p>
         </div>
-        {/* <div className="us">
-          <div className="container">
-            <div className="us-details">
-              <div className="us-text">
-                <h1>
-                  Müştərilərin <i className="orange">AZGP</i> haqqında fikirləri
-                </h1>
-                <p className="pcontent">
-                  Siz də müştərilərimiz sırasına daxil olun
-                </p>
-                <i className="fa-solid fa-right-long" />
-              </div>
-              <div className="us-swiper">
-                <Swiper
-                  loop="true"
-                  // autoplay={{
-                  //   delay: 1500,
-                  // }}
-                  // pagination={{
-                  //   clickable: true,
-                  // }}
-                  // navigation={true}
-                  modules={[Autoplay, Navigation, Pagination]}
-                  slidesPerView={1}
-                  className="swiper-about"
-                >
-                  <SwiperSlide>
-                    <div className="us-right-text">
-                      <div className="us-up-text">
-                        <p>
-                          Buradan alış-veriş etdiyimə görə çox məmnunam.Hər kəsə
-                          buradan alış-veriş etməyi tövsiyə edirəm.Məhsullar çox
-                          keyfiyyətlidir və qiymətlər çox sərfəlidir.Məhsullar
-                          təbiətə heç bir zərər vermədən hazırlanır və tamamilə
-                          orqanikdir.Ən əsası isə komanda çox gülərüzdür və daim
-                          müştəri ilə maraqlanırlar.
-                        </p>
-                      </div>
-                      <div className="us-bottom-text">
-                        <div className="us-image">
-                          <img src="https://shtheme.org/demosd/betty/wp-content/uploads/2022/02/t1.png" />
-                        </div>
-                        <div className="us-bottom">
-                          <p className="pcontent">Nuray İsgəndərli</p>
-                          <p>müştəri</p>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="us-right-text">
-                      <div className="us-up-text">
-                        <p>
-                          Buradan alış-veriş etdiyimə görə çox məmnunam.Hər kəsə
-                          buradan alış-veriş etməyi tövsiyə edirəm.Məhsullar çox
-                          keyfiyyətlidir və qiymətlər çox sərfəlidir.Məhsullar
-                          təbiətə heç bir zərər vermədən hazırlanır və tamamilə
-                          orqanikdir.Ən əsası isə komanda çox gülərüzdür və daim
-                          müştəri ilə maraqlanırlar.
-                        </p>
-                      </div>
-                      <div className="us-bottom-text">
-                        <div className="us-image">
-                          <img src="https://shtheme.org/demosd/betty/wp-content/uploads/2022/02/t3.png" />
-                        </div>
-                        <div className="us-bottom">
-                          <p className="pcontent">Aysu Əhmədli</p>
-                          <p>müştəri</p>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="us-right-text">
-                      <div className="us-up-text">
-                        <p>
-                          Buradan alış-veriş etdiyimə görə çox məmnunam.Hər kəsə
-                          buradan alış-veriş etməyi tövsiyə edirəm.Məhsullar çox
-                          keyfiyyətlidir və qiymətlər çox sərfəlidir.Məhsullar
-                          təbiətə heç bir zərər vermədən hazırlanır və tamamilə
-                          orqanikdir.Ən əsası isə komanda çox gülərüzdür və daim
-                          müştəri ilə maraqlanırlar.
-                        </p>
-                      </div>
-                      <div className="us-bottom-text">
-                        <div className="us-image">
-                          <img src="https://avenue-sandbox.mybigcommerce.com/product_images/uploaded_images/newsletter-right.jpg" />
-                        </div>
-                        <div className="us-bottom">
-                          <p className="pcontent">Aysu Əhmədli</p>
-                          <p>müştəri</p>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div className="our_artists">
           <div className="container">
             <h1>Komandamız</h1>

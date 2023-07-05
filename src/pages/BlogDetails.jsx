@@ -1,25 +1,22 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 function BlogDetails() {
-  const { id } = useParams();
+  const { slug } = useParams();
   //datani contentsden goturmusem
   const [content, setContent] = useState({});
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch(`http://localhost:7700/contents/${id}`).then((a) =>
-        a.json()
-      );
+      let data = await fetch(
+        `http://127.0.0.1:8000/BlogSingleView/${slug}`
+      ).then((a) => a.json());
       setContent(data);
     };
     getInfo();
   }, []);
   // console.log(slug)
-  console.log(content,'bizim data');
+  console.log(content, "bizim data");
   return (
     <section>
-      {/* <div className="k" key={content.id}>
-        <h1>{content?.title}</h1>
-      </div> */}
       <div className="blogdetail">
         <div className="container">
           <div className="content">
@@ -27,7 +24,6 @@ function BlogDetails() {
               <img src={content?.image} />
             </div>
             <div className="content-details">
-          
               <h2 className="t-t">#{content?.title}</h2>
               <hr />
               <p className="pcontent">{content?.content}</p>
@@ -36,37 +32,8 @@ function BlogDetails() {
             <h2 className="t-t">#Tövsiyə</h2>
             <hr />
             <p className="pcontent">
-              Düşünürəm ki, bu 2022-ci ilin ilk postu olsun. Ola bilsin ki,
-              dövrü pozub daha tez-tez yazmağa başlayım. Əslində məzmundan
-              narahat olmadan yazmaq üçün darıxıram. 8-10 il əvvəl bloqlar çox
-              vacib idi, indi həvəskarlardan başqa oxucu çox deyil. Onsuz da
-              evdə dayana bilməyən iki yaşlı körpəsi olan bir körpə var, bu anda
-              düşünə biləcəyim şey budur və bundan başqa heç bir şey narahat
-              etmir. Beləliklə, vaxt məhduddur. Nəysə, uzatdım, bax, uzun müddət
-              yazmayanda belə olur. Narahat olmadan yazmaq gözəldir. Kosmetika
-              və makiyaj dünyasından uzaq olmuşam. Yalnız ehtiyacım olanda
-              illərdir istifadə etdiyim məhsullardan dərhal yenisini alıram.
-              Hətta yeni bir məhsulu sınamaq istəsəm də, mağazalardan yalnız
-              dostlarımın tövsiyə etdiyi və ya mənə maraqlı olanı alıram. Onsuz
-              da çox vaxtım yoxdur. İllərdir yağlı dərili bir insan olaraq
-              nəmləndiricilərə çox əhəmiyyət verməzdim. Əvvəllər, amma həmişə
-              parça-parça olur. Dəri yağlı olduqda, onsuz da özünü təmin edir.
-              Yaş bitsə də, qırışlar hələ də bazarda yoxdur, şükür, bunu dərimin
-              bir az yağlı olması ilə əlaqələndirirəm. Bu yaxınlarda baxdım,
-              evdə on yüz milyonluq üz kremini birtəhər bitirmişəm, bəyənmədiyim
-              üz kremləri üçün artıq əl-ayaq kremləri düzəldirəm. Clinique
-              Turkey onlayn saytını sevirəm. Mağazalarla müqayisədə daha
-              müxtəlif məhsullar və yaxşı kampaniyalar var. Bunu alsanız,
-              hədiyyə olaraq çoxlu nümunələr var. Clinique Pep-start Hydroblur
-              nəmləndiricisi də yeni sayılır, lakin dərimdən razı qalacağımı
-              bilmədiyim üçün bu tip kremlər üçün səyahət ölçüsünə üstünlük
-              verirəm. Bu ölçüləri qane etsem tam razmerini alacam. Beləliklə,
-              məhsullar əlimdə boşa getmir və istifadə etməyəcəyim bir məhsula
-              çox büdcə ayırmıram. Clinique saytında bir kampaniya var idi.
-              Hydroblur ilə kiçik ölçüdə Clinique hədiyyə dəsti aldım, dodaq
-              boyası aldım, onlarla birlikdə bir neçə kiçik ölçülü məhsulla
-              birlikdə başqa bir kiçik ölçülü Clinique Pep-Start hədiyyə
-              etdilər.
+              lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+              lorem
             </p>
           </div>
         </div>

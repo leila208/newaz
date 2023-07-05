@@ -29,10 +29,10 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<Questions />} />{" "}
         <Route path="/blog" element={<Content />} />
-        <Route path="/faq" element={<Questions />} />
-        <Route path="/blogdetails/:id" element={<BlogDetails />} />
-        <Route path="/blogs/:id" element={<FilterCategories />} />
+        <Route path="/blogdetails/:slug" element={<BlogDetails />} />
+        <Route path="/blogs/:slug" element={<FilterCategories />} />
         <Route path="/new" element={<New />} />
       </Routes>
       <Footer />

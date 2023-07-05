@@ -1,5 +1,14 @@
 import Slider from "../Components/Slider";
 // import Rating from "../Components/Rating";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+// Import Swiper styles
+
+
 import RatedBlog from "./RatedBlog";
 import Faq from "react-faq-component";
 import { useState, useEffect } from "react";
@@ -40,8 +49,8 @@ function Homepage() {
   const [industry, setIndustry] = useState([]);
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch("http://localhost:7700/contents").then((a) =>
-        a.json()
+      let data = await fetch("http://localhost:8000/blog/GalleryView/").then(
+        (a) => a.json()
       );
       setIndustry(data);
     };
@@ -51,7 +60,7 @@ function Homepage() {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch("http://localhost:7700/blogs").then((a) =>
+      let data = await fetch("http://localhost:8000/blog/NewsView/").then((a) =>
         a.json()
       );
       setBlogs(data);
@@ -64,16 +73,29 @@ function Homepage() {
       <Slider />
       <div className="container">
         <div className="navshops">
-          {industry.map((a) => (
-            <div className="navshop">
-              <div className="navshop-image">
-                <img src={a.image} />
-              </div>
-              <div className="navshop-details">
-                <p>{a.name}</p>
-              </div>
-            </div>
-          ))}
+          <Swiper
+            loop="true"
+            autoplay={{
+              delay: 2500,
+            }}
+            modules={[Autoplay, Navigation]}
+            navigation={true}
+            slidesPerView={3}
+          >
+            {" "}
+            {industry.map((a) => (
+              <SwiperSlide>
+                <div className="navshop">
+                  <div className="navshop-image">
+                    <img src={a.image} />
+                  </div>
+                  <div className="navshop-details">
+                    <p>{a.name}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
       <div className="organic">
@@ -95,7 +117,7 @@ function Homepage() {
                 <div className="navshop-toptext">
                   <p>{blog.name}</p>
                 </div>
-                <Link to={`/blogs/${blog.id}`}>
+                <Link to={`/blogs/${blog.slug}`}>
                   {" "}
                   <button className="Btn"> Daha ətraflı</button>
                 </Link>
