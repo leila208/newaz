@@ -5,9 +5,8 @@ import { connect } from "react-redux";
 import { useEffect } from "react";
 import { useState } from "react";
 import logo from "../images/logoo.png";
+import img1 from "../images/a.png";
 function Header(props) {
-  // const Header = () => {
-  // Sticky Menu Area
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -75,7 +74,7 @@ function Header(props) {
               <ul className="all">
                 <li>
                   {" "}
-                  <NavLink to="/"> AZGP</NavLink>{" "}
+                  <img id="image34" src={img1} alt="" />{" "}
                 </li>
               </ul>
             </div>

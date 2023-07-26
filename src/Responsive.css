@@ -147,6 +147,27 @@
   .contact-text {
     width: 100%;
   }
+  .details-content{
+    flex-direction: column;
+  }
+  .details-content h1{
+    border:none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 29px;
+  }
+  .details-content p{
+    margin-top: 1%;
+  }
+  .details-img img{
+    height: 300px;
+  }
+  #home2{
+
+    height: 45vh;
+  }
 }
 @media screen and (max-width: 768px) {
   footer {
@@ -511,6 +532,13 @@
   }
   .contact-map {
     height: 400px;
+  }
+  .details-img img{
+    height: 250px;
+  }
+  #home2{
+
+    height: 35vh;
   }
 }
 
@@ -1017,6 +1045,32 @@ height: 100px;
   .login-form form {
     width: 422px;
   }
+  
+  .details-img img{
+    height: 100px;
+    
+  }
+  .details-img{
+    margin-top: 3%;
+  }
+  .details-content p{
+    font-size: 10px;
+    font-weight: 600;
+}
+.details-content h1{
+  font-size: 12px;
+}
+  .content-long p{
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .content-long #tarix{
+    padding-left: 70%;
+  }
+  #home2{
+
+    height: 30vh;
+  }
 }
 @media screen and (max-width: 320px) {
   .navshop-image{
@@ -1094,5 +1148,19 @@ height: 100px;
 }
 .contentBlogİmage {
   height: 300px;
+}
+.details-content p{
+  font-size: 8px;
+  font-weight: 600;
+}
+.details-content h1{
+font-size: 10px;
+}
+.content-long p{
+  font-size: 8px;
+}
+#home2{
+  background-size: inherit;
+  height: 25vh;
 }
 }

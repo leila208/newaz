@@ -10,12 +10,14 @@ function FilterCategories(props) {
   const [product, setProduct] = useState({});
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch(`http://localhost:8000/NewsView/${slug}`).then(
+      let data = await fetch(`http://localhost:8000/blog/NewsSingleView/${slug}`).then(
         (a) => a.json()
       );
       setProduct(data);
+
     };
     getData();
+    
   }, []);
   return (
     <>
@@ -29,7 +31,7 @@ function FilterCategories(props) {
               <img src={product.image} />
             </div>
             <div className="contentBlogDetails">
-              <h2 className="t-t">#{product.name}</h2>
+              <h2 className="t-t">#{product.title}</h2>
               <p>{product.content}</p>
             </div>
           </div>
