@@ -7,7 +7,7 @@ function BlogDetails() {
   useEffect(() => {
     const getInfo = async () => {
       let data = await fetch(
-        `http://127.0.0.1:8000/blog/BlogSingleView/${slug}`
+        `https://admin.azgpen.com/blog/BlogSingleView/${slug}`
       ).then((a) => a.json());
       setContent(data);
     };

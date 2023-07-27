@@ -35,7 +35,7 @@ function Homepage() {
   const [rated, setRated] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch("http://localhost:7700/contents").then((a) =>
+      let data = await fetch("https://admin.azgpen.com/contents").then((a) =>
         a.json()
       );
 
@@ -49,7 +49,7 @@ function Homepage() {
   const [industry, setIndustry] = useState([]);
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch("http://localhost:8000/blog/GalleryView/").then(
+      let data = await fetch("https://admin.azgpen.com/blog/GalleryView/").then(
         (a) => a.json()
       );
       setIndustry(data);
@@ -60,7 +60,7 @@ function Homepage() {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const getInfo = async () => {
-      let data = await fetch("http://localhost:8000/blog/NewsView/").then((a) =>
+      let data = await fetch("https://admin.azgpen.com/blog/NewsView/").then((a) =>
         a.json()
       );
       setBlogs(data);

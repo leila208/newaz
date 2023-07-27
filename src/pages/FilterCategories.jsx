@@ -10,7 +10,7 @@ function FilterCategories(props) {
   const [product, setProduct] = useState({});
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch(`http://localhost:8000/blog/NewsSingleView/${slug}`).then(
+      let data = await fetch(`https://admin.azgpen.com/blog/NewsSingleView/${slug}`).then(
         (a) => a.json()
       );
       setProduct(data);

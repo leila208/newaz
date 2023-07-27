@@ -5,7 +5,7 @@ function RatedBlog() {
   const [rated, setRated] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch("http://localhost:8000/blog/BlogView/").then((a) =>
+      let data = await fetch("https://admin.azgpen.com/blog/BlogView/").then((a) =>
         a.json()
       );
 

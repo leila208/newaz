@@ -10,7 +10,7 @@ function New() {
   const [latest, setLatest] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch("http://localhost:7700/products").then((a) =>
+      let data = await fetch("https://admin.azgpen.com/products").then((a) =>
         a.json()
       );
       data = data.filter((a) => a.status === "new");
