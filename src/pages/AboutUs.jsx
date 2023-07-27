@@ -20,7 +20,7 @@ function AboutUs() {
   const [partners, setPartners] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch(`https://admin.azgpen.com/blog/partnersView/`).then(
+      let data = await fetch(`https://admin.azgpen.com/blog/EmployeeView/`).then(
         (a) => a.json()
       );
       setAbout(data);
