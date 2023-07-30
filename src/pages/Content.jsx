@@ -3,55 +3,72 @@ import { useState, useEffect } from "react";
 import Pagination from "../Components/Pagination";
 function Content() {
   const [contents, setContents] = useState([]);
-  useEffect(() => {
-    const getInfo = async () => {
-      let data = await fetch("https://admin.azgpen.com/blog/BlogView/").then((a) =>
-        a.json()
-      );
-      setContents(data);
-    };
-    getInfo();
-  }, []);
-  console.log(contents)
+
+  const getInfo = async (e='') => {
+    let data = await fetch("https://admin.azgpen.com/blog/BlogView/").then((a) =>
+      a.json()
+    );
+   
+
+    setContents(data)
+   
+    
+      getSortedDataFunction(e)
+    
+    
+
+  };
+  
+  
+  const[sortedData,setSortedData] = useState([])
   const [searchInput, setSearchInput] = useState("");
+  const [test, setTest] = useState("");
+
+  const getSortedDataFunction = async (e) => {
+    if (e) {
+     
+      if (e == "az") {
+        setSortedData(
+          contents?.results?.sort(
+            (a, b) => a.title.charCodeAt() - b.title.charCodeAt()
+          )
+        );
+      } else if (e == "za") {
+        setSortedData(
+          contents?.results?.sort(
+            (a, b) => b.title.charCodeAt() - a.title.charCodeAt()
+          )
+        );
+      } else {
+
+        setSortedData(contents?.results);
+      }
+    } else {
+      
+      setSortedData(contents?.results);
+    }
+    setTest(e)
+  }
   const searching = (e) => {
     setSearchInput(e.target.value);
   };
-  const [rated, setRated] = useState([]);
-  useEffect(() => {
-    const getData = async () => {
-      let data = await fetch("https://admin.azgpen.com/blog/BlogView/").then((a) =>
-        a.json()
-      );
-      // data = data.filter((a) => a.status === "new");
-      setRated(data);
-    };
-    getData();
-  }, []);
+
+ useEffect(() => {
+   getInfo(test);
+   
+ }, [sortedData]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(4);
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
-  const currentPosts=contents.results?.slice(firstPostIndex, lastPostIndex);
-   const [priceFilter, setPriceFilter] = useState([]);
-   const pricing = (e) => {
-     if (e.target.value === "az") {
-       setPriceFilter(
-         [...contents].sort(
-           (a, b) => a.name.charCodeAt() - b.name.charCodeAt()
-         )
-       );
-     } else {
-       setPriceFilter(
-         [...contents].sort(
-           (a, b) => b.name.charCodeAt() - a.name.charCodeAt()
-         )
-       );
-     }
-  };
-   useEffect(() => {
-     setContents(priceFilter);
-   }, [priceFilter]);
+ 
+
+ 
+  
+ 
+
+   const currentPosts = contents?.results?.slice(firstPostIndex, lastPostIndex); 
+
   return (
     <>
       <section>
@@ -74,7 +91,7 @@ function Content() {
               </div>
               <div className="recent">
                 <div className="bloqhead">Ən yeni bloqlar</div>
-                {rated.results?.slice(0, 6).map((a) => (
+                {sortedData?.slice(0, 6).map((a) => (
                   <>
                     <div className="recent-blog" key={a.id}>
                       <div
@@ -86,7 +103,7 @@ function Content() {
                           <img src={a.image} />
                         </div>
                         <div className="recent-text">
-                          <Link to={`/blogdetails/${a.id}`}>
+                          <Link to={`/blogdetails/${a.slug}`}>
                             <h1>{a.text}</h1>
                           </Link>
                           <div className="calendar">
@@ -103,13 +120,13 @@ function Content() {
             <div className="blogcontents">
               <div className="paginations">
                 <Pagination
-                  totalPosts={contents.length}
+                  totalPosts={contents?.length}
                   postsPerPage={postsPerPage}
                   setCurrentPage={setCurrentPage}
                 />
                 <select
                   className="select"
-                  onChange={pricing}
+                  onChange={(e) => getSortedDataFunction(e.target.value)}
                   defaultValue={"DEFAULT"}
                 >
                   <option className="option" value="DEFAULT" disabled>
@@ -124,12 +141,12 @@ function Content() {
                 </select>
               </div>
               <div className="blogcontent">
-                {currentPosts
+                {sortedData
                   ?.filter((a) => {
                     if (searchInput == "") {
                       return a;
                     } else if (
-                      a.name.toLowerCase().includes(searchInput.toLowerCase())
+                      a.title.toLowerCase().includes(searchInput.toLowerCase())
                     ) {
                       return a;
                     }
@@ -156,14 +173,15 @@ function Content() {
                           </ul>
                         </div>
 
-                        < p className="rated-h1 pcontent" id="brown">{a.name}</p>
-                        <Link to={`/blogdetails/${a.id}`} key={a.id}>
+                     
+                        <Link to={`/blogdetails/${a.slug}`} key={a.id}>
                           {" "}
+                          <h1>{a.title}</h1>
                           Daha ətraflı
                           <i className="fa-solid fa-angles-right"></i>
                         </Link>
                       </div>
-                      <div></div>
+                      <div> </div>
                     </div>
                   ))}
               </div>

@@ -10,7 +10,7 @@ function AboutUs() {
   const [about, setAbout] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      let data = await fetch(`http://localhost:8000/blog/EmployeeView/`).then(
+      let data = await fetch(`https://admin.azgpen.com/blog/EmployeeView/`).then(
         (a) => a.json()
       );
       setAbout(data);
@@ -32,6 +32,28 @@ function AboutUs() {
       <section>
         <div className="k">
           <p>Haqqımızda</p>
+        </div>
+        <div className="container">
+          <div className="content-long">
+            <div className="titleone">
+              <h1>Başlıq</h1>
+            </div>
+            <p className="one">
+              loremLorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+              Vestibulum volutpat tellus diam, consequat gravida libero rhoncus
+              ut loremLorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+              Vestibulum volutpat tellus diam, consequat gravida libero rhoncus
+              ut loremLorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+              Vestibulum volutpat tellus diam, consequat gravida libero rhoncus
+              ut loremLorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+              Vestibulum volutpat tellus diam, consequat gravida libero rhoncus
+              ut
+            </p>
+          </div>
         </div>
         <div className="our_artists">
           <div className="container">
@@ -85,7 +107,7 @@ function AboutUs() {
                   <i className="fa-regular fa-user-hair-long client-icon"></i>
                 </div>
                 <div className="client-text">
-                  <CountUp end={500} start={0} duration={6.75} separator=" " />
+                  
                   <p>Müştəri</p>
                 </div>
               </div>
@@ -94,14 +116,7 @@ function AboutUs() {
                   <i className="fa-regular fa-manat-sign client-icon"></i>
                 </div>
                 <div className="client-text">
-                  <CountUp
-                    end={15}
-                    start={0}
-                    duration={6.75}
-                    separator=" "
-                    decimals={3}
-                    decimal=","
-                  />
+               
                   <p>Gəlir</p>
                 </div>
               </div>
@@ -110,7 +125,7 @@ function AboutUs() {
                   <i className="fa-regular fa-file-chart-column client-icon"></i>
                 </div>
                 <div className="client-text">
-                  <CountUp end={250} start={0} duration={6.75} separator=" " />
+                 
                   <p>Proyekt</p>
                 </div>
               </div>

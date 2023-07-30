@@ -13,8 +13,7 @@ function RatedBlog() {
     };
     getData();
   }, []);
-  console.log(rated)
-  console.log('22222222')
+ 
   
   return (
     <>

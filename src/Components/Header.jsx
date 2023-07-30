@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Modal from "./Modal";
 import { connect } from "react-redux";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -22,6 +21,9 @@ function Header(props) {
       : header.classList.remove("is-sticky");
   };
   const [istoggled, setIstoggled] = useState(false);
+  const handleClick = () => {
+    setIstoggled(!istoggled)
+  }
   return (
     <>
       <header className="header-section d-none d-xl-block">
@@ -51,16 +53,24 @@ function Header(props) {
               <NavLink to="category/tools">Fırça və aksesuarlar</NavLink>
             </li> */}
             <li>
-              <NavLink to="/">Ana səhifə</NavLink>
+              <NavLink onClick={handleClick} to="/">
+                Ana səhifə
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Əlaqə</NavLink>
+              <NavLink onClick={handleClick} to="/contact">
+                Əlaqə
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/aboutus">Haqqımızda</NavLink>
+              <NavLink onClick={handleClick} to="/aboutus">
+                Haqqımızda
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/blog">Bloq</NavLink>
+              <NavLink onClick={handleClick} to="/blog">
+                Bloq
+              </NavLink>
             </li>
           </ul>
         </div>

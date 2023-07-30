@@ -8,7 +8,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // Import Swiper styles
 
-
 import RatedBlog from "./RatedBlog";
 import Faq from "react-faq-component";
 import { useState, useEffect } from "react";
@@ -28,7 +27,8 @@ function Homepage() {
       },
       {
         title: "Niyə biz?",
-        content: "Xidmətinin keyfiyyəti ilə sizlərin güvənini qazanan AzGP şirkəti öz təcrübəsi və peşəkarlığı ilə sahəsində öz sözünü deyir.",
+        content:
+          "Xidmətinin keyfiyyəti ilə sizlərin güvənini qazanan AzGP şirkəti öz təcrübəsi və peşəkarlığı ilə sahəsində öz sözünü deyir.",
       },
     ],
   };
@@ -44,7 +44,6 @@ function Homepage() {
     getData();
   }, []);
 
-
   //industry ve blogs istifade etmisem
   const [industry, setIndustry] = useState([]);
   useEffect(() => {
@@ -56,7 +55,7 @@ function Homepage() {
     };
     getInfo();
   }, []);
-  console.log(industry)
+ 
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const getInfo = async () => {
@@ -67,13 +66,28 @@ function Homepage() {
     };
     getInfo();
   }, []);
-  // console.log(blogs.map((a) => a));
+
   return (
     <>
       <Slider />
-      <div className="container">
-        <div className="navshops">
+
+      <div className="navshops">
+        <div className="container">
           <Swiper
+            breakpoints={{
+              120: {
+                slidesPerView: 1,
+              },
+              320: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+            }}
             loop="true"
             autoplay={{
               delay: 2500,
@@ -98,6 +112,7 @@ function Homepage() {
           </Swiper>
         </div>
       </div>
+
       <div className="organic">
         <div className="organic-image">
           <i className="fa-solid fa-industry"></i>
@@ -106,27 +121,55 @@ function Homepage() {
           <p>Biz Aparıcı Mühəndislik Sənayesiyik</p>
         </div>
       </div>
+
+      <RatedBlog />
       <div className="container">
+        <div className="heading">
+          <h1>Tərəfdaşlar</h1>
+        </div>
         <div className="navshops">
-          {blogs.map((blog) => (
-            <div className="navshop">
-              <div className="navshop-image">
-                <img src={blog.image} />
-              </div>
-              <div className="navshop-details">
-                <div className="navshop-toptext">
-                  <p>{blog.name}</p>
+          <Swiper
+            breakpoints={{
+              120: {
+                slidesPerView: 1,
+              },
+              320: {
+                slidesPerView: 2,
+              },
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+            }}
+            loop="true"
+            autoplay={{
+              delay: 2500,
+            }}
+            modules={[Autoplay, Navigation]}
+            navigation={true}
+            slidesPerView={3}
+          >
+            {" "}
+            {blogs.map((blog) => (
+              <SwiperSlide>
+                {" "}
+                <div className="navshopp">
+                  <div className="navshopp-image">
+                    <img src={blog.image} />
+                  </div>
+                  <div className="navshop-details">
+                    <div className="navshop-toptext">
+                      <p>{blog.name}</p>
+                    </div>
+                  </div>
                 </div>
-                <Link to={`/blogs/${blog.slug}`}>
-                  {" "}
-                  <button className="Btn"> Daha ətraflı</button>
-                </Link>
-              </div>
-            </div>
-          ))}
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
-      <RatedBlog />
       <div className="heading">
         <h1>Tez-tez verilən suallar</h1>
       </div>

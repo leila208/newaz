@@ -1,8 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Product from "../Components/Product";
 import Pagination from "../Components/Pagination";
-import Faq from "react-faq-component";
 import { connect } from "react-redux";
 function FilterCategories(props) {
   const { slug } = useParams();

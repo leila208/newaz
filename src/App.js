@@ -10,7 +10,6 @@ import Content from "./pages/Content";
 import AboutUs from "./pages/AboutUs";
 import Questions from "./pages/Questions";
 import FilterCategories from "./pages/FilterCategories";
-import New from "./pages/New";
 import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
 import { useEffect } from "react";
@@ -33,7 +32,6 @@ function App() {
         <Route path="/blog" element={<Content />} />
         <Route path="/blogdetails/:slug" element={<BlogDetails />} />
         <Route path="/blogs/:slug" element={<FilterCategories />} />
-        <Route path="/new" element={<New />} />
       </Routes>
       <Footer />
     </>

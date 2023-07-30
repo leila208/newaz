@@ -13,7 +13,7 @@ function Contact() {
   };
   const onSubmit = async (e) => {
     e.preventDefault();
-    const a = await fetch("http://localhost:8000/blog/ContactView/", {
+    const a = await fetch("https://admin.azgpen.com/blog/ContactView/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ function Contact() {
       .then((a) => a.json())
       .then((data) => data);
   };
-  console.log(contactForm)
+  
   return (
     <section className="photo">
       <div className="k">
