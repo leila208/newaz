@@ -124,7 +124,7 @@ function Homepage() {
 
       <RatedBlog />
       <div className="container">
-        <div className="heading">
+        <div className="headingg">
           <h1>Tərəfdaşlar</h1>
         </div>
         <div className="navshops">

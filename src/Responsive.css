@@ -586,6 +586,9 @@ height: 100px;
   .heading h1 {
     font-size: 26px;
   }
+    .headingg h1 {
+    font-size: 26px;
+  }
   .content .pcontent {
     font-size: 20px !important;
   }
@@ -739,6 +742,9 @@ height: 100px;
   .heading h1 {
     font-size: 28px;
   }
+   .headingg h1 {
+    font-size: 28px;
+  }
   .organic-image img {
     width: 120px;
     height: 120px;
@@ -776,7 +782,9 @@ height: 100px;
     width: 400px;
     height: 666px;
   } */
- 
+  .heading {
+    padding: 70px 0;
+  }
 
   .input {
     width: 80px;
