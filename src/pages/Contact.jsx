@@ -8,7 +8,7 @@ function Contact() {
     subject: "",
     message: "",
   });
-  console.log(contactForm)
+
   const handleInput = (e) => {
     setContactForm({ ...contactForm, [e.target.name]: e.target.value });
   };
@@ -30,7 +30,7 @@ function Contact() {
     })
       .then((a) => a.json())
       .then((data) => data);
-      console.log(a)
+
   };
   
   return (

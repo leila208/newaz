@@ -1243,7 +1243,7 @@ margin-top: 10px;
   justify-content: center;
 }
 .k {
-  background-image: url("./images/nk.webp");
+  background-image: url("./images/11.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1849,7 +1849,7 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
 }
 .navshop img {
-  height: 400px;
+  height: 350px;
   width: 100%;
   object-fit: cover;
 }
