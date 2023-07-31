@@ -36,22 +36,12 @@ function AboutUs() {
         <div className="container">
           <div className="content-long">
             <div className="titleone">
-              <h1>Başlıq</h1>
+              <h1>Haqqımızda</h1>
             </div>
             <p className="one">
-              loremLorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
-              Vestibulum volutpat tellus diam, consequat gravida libero rhoncus
-              ut loremLorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
-              Vestibulum volutpat tellus diam, consequat gravida libero rhoncus
-              ut loremLorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
-              Vestibulum volutpat tellus diam, consequat gravida libero rhoncus
-              ut loremLorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
-              Vestibulum volutpat tellus diam, consequat gravida libero rhoncus
-              ut
+              AzGP şirkəti artıq 2020-ci ildən fəaliyyətə başlayıb və artıq illərdiki öz müştərilərinə yüksək keyfiyyətlə xidmət edir. 
+              Biz Geofizika, Qrunt Suları və Ətraf Mühit Xidmətlərində aparıcı elm və təcrübə ilə problemləri həll edirik. Məqsədimiz müştərilərimiz üçün gördüyümüz işin keyfiyyətini qorumaq və ən yeni texnologiyalarla hər zaman xidmətinizdə olmaqdır.
+              
             </p>
           </div>
         </div>
