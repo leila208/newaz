@@ -8,6 +8,7 @@ function Contact() {
     subject: "",
     message: "",
   });
+  console.log(contactForm)
   const handleInput = (e) => {
     setContactForm({ ...contactForm, [e.target.name]: e.target.value });
   };
@@ -20,15 +21,16 @@ function Contact() {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        username: contactForm.username,
+        full_name: contactForm.username,
         email: contactForm.email,
-        phoneNumber: contactForm.phoneNumber,
-        subject: contactForm.subject,
+        phone_number: contactForm.phoneNumber,
+        title: contactForm.subject,
         message: contactForm.message,
       }),
     })
       .then((a) => a.json())
       .then((data) => data);
+      console.log(a)
   };
   
   return (
