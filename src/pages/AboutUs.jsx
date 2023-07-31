@@ -63,7 +63,7 @@ function AboutUs() {
                     <img src={a?.image} />
                   </div>
                   <div className="artisttext">
-                    <p>
+                    <p className="Ayxaninadi">
                       {a?.first_name} {a?.last_name} / {a?.job_title}
                     </p>
                   </div>
@@ -72,12 +72,19 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <div className="our_artistss">
-          <div className="container">
-            <h1>Gördüyümüz işlər</h1>
-            <div className="content-longged">
-              <p className="one">lorem</p>
+        <div className="container">
+          <div className="content-longg">
+            <div className="titleone">
+              <h1>Gördüyümüz işlər</h1>
             </div>
+            <p className="one">
+              AzGP şirkəti artıq 2020-ci ildən fəaliyyətə başlayıb və artıq
+              illərdiki öz müştərilərinə yüksək keyfiyyətlə xidmət edir. Biz
+              Geofizika, Qrunt Suları və Ətraf Mühit Xidmətlərində aparıcı elm
+              və təcrübə ilə problemləri həll edirik. Məqsədimiz müştərilərimiz
+              üçün gördüyümüz işin keyfiyyətini qorumaq və ən yeni
+              texnologiyalarla hər zaman xidmətinizdə olmaqdır.
+            </p>
           </div>
         </div>
         <div className="about-flowers">
