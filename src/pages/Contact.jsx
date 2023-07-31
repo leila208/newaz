@@ -30,7 +30,14 @@ function Contact() {
     })
       .then((a) => a.json())
       .then((data) => data);
+     setContactForm({
 
+    username: "",
+    email: "",
+    phoneNumber: "",
+    subject: "",
+    message: "",
+  })
   };
   
   return (

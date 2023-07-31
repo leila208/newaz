@@ -34,17 +34,21 @@ function AboutUs() {
           <p>Haqqımızda</p>
         </div>
         <div className="container">
-          <div className="content-long">
+          <div className="content-longg">
             <div className="titleone">
               <h1>Haqqımızda</h1>
             </div>
             <p className="one">
-              AzGP şirkəti artıq 2020-ci ildən fəaliyyətə başlayıb və artıq illərdiki öz müştərilərinə yüksək keyfiyyətlə xidmət edir. 
-              Biz Geofizika, Qrunt Suları və Ətraf Mühit Xidmətlərində aparıcı elm və təcrübə ilə problemləri həll edirik. Məqsədimiz müştərilərimiz üçün gördüyümüz işin keyfiyyətini qorumaq və ən yeni texnologiyalarla hər zaman xidmətinizdə olmaqdır.
-              
+              AzGP şirkəti artıq 2020-ci ildən fəaliyyətə başlayıb və artıq
+              illərdiki öz müştərilərinə yüksək keyfiyyətlə xidmət edir. Biz
+              Geofizika, Qrunt Suları və Ətraf Mühit Xidmətlərində aparıcı elm
+              və təcrübə ilə problemləri həll edirik. Məqsədimiz müştərilərimiz
+              üçün gördüyümüz işin keyfiyyətini qorumaq və ən yeni
+              texnologiyalarla hər zaman xidmətinizdə olmaqdır.
             </p>
           </div>
         </div>
+
         <div className="our_artists">
           <div className="container">
             <h1>Komandamız</h1>
@@ -65,6 +69,14 @@ function AboutUs() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+        <div className="our_artistss">
+          <div className="container">
+            <h1>Gördüyümüz işlər</h1>
+            <div className="content-longged">
+              <p className="one">lorem</p>
             </div>
           </div>
         </div>
@@ -89,6 +101,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
+
         <div className="area">
           <div className="container">
             <div className="clients">
@@ -97,7 +110,6 @@ function AboutUs() {
                   <i className="fa-regular fa-user-hair-long client-icon"></i>
                 </div>
                 <div className="client-text">
-                  
                   <p>Müştəri</p>
                 </div>
               </div>
@@ -106,7 +118,6 @@ function AboutUs() {
                   <i className="fa-regular fa-manat-sign client-icon"></i>
                 </div>
                 <div className="client-text">
-               
                   <p>Gəlir</p>
                 </div>
               </div>
@@ -115,7 +126,6 @@ function AboutUs() {
                   <i className="fa-regular fa-file-chart-column client-icon"></i>
                 </div>
                 <div className="client-text">
-                 
                   <p>Proyekt</p>
                 </div>
               </div>

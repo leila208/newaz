@@ -30,6 +30,9 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .navshop-image {
+    height: 320px;
+  }
   .organic-text{
     text-align: center;
   }
@@ -168,6 +171,12 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .row-title-text{
+    font-weight: 500 !important;
+  }
+  .row-content-text {
+  font-size: 22px !important;}
+
   .details-img{
     height: 500px;
   }
@@ -276,6 +285,9 @@
   .our_artists h1 {
     font-size: 24px;
   }
+   .our_artistss h1 {
+    font-size: 24px;
+  }
   .artist {
     height: 250px;
   }
@@ -349,7 +361,7 @@
     display: none;
   }
   .navshop-image {
-    height: 400px;
+    height: 300px;
   }
   .navshop-details {
     display: flex;
@@ -545,6 +557,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .navshop-image {
+    height: 270px;
+  }
    .details-img{
     height: 400px;
   }
@@ -683,9 +698,7 @@ height: 100px;
   .navshops {
     row-gap: 50px;
   }
-  .navshop-image {
-    height: 350px;
-  }
+ 
   .navshop-image img {
     height: 100%;
   }
@@ -1070,6 +1083,17 @@ height: 100px;
 .details-content h1{
   font-size: 12px;
 }
+  .content-longg p{
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .content-longged p{
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .content-longg #tarix{
+    padding-left: 70%;
+  }
   .content-long p{
     font-size: 10px;
     font-weight: 600;
@@ -1083,15 +1107,16 @@ height: 100px;
   }
 }
 @media screen and (max-width: 320px) {
+  .navshop-image {
+    height: 250px;
+  }
    .details-img{
     height: 350px;
   }
   .absdate{
     left: 10%;
   }
-  .navshop-image{
-    height: 300px;
-  }
+ 
    .navshop-image img{
     height:100%;
   }
@@ -1173,6 +1198,12 @@ height: 100px;
 font-size: 10px;
 }
 .content-long p{
+  font-size: 8px;
+}
+.content-longg p{
+  font-size: 8px;
+}
+.content-longged p{
   font-size: 8px;
 }
 #home2{

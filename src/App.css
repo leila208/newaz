@@ -769,8 +769,8 @@ hr {
   color: gray;
   margin: 30px 0;
 }
-.headingg{
-   text-align: center;
+.headingg {
+  text-align: center;
   padding: 2% 0;
 }
 .headingg h1 {
@@ -1139,6 +1139,14 @@ margin-top: 10px;
   text-align: center;
 }
 .our_artists h1 {
+  margin: 10px;
+  font-size: 30px;
+}
+.our_artistss {
+  margin-top: 5%;
+  text-align: center;
+}
+.our_artistss h1 {
   margin: 10px;
   font-size: 30px;
 }
@@ -1841,6 +1849,13 @@ input::-webkit-inner-spin-button {
   padding: 20px 20px 10px 0;
 }
 /* //navshop */
+.navshopps {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .navshops {
   margin-top: 50px;
   width: 100%;
@@ -1858,15 +1873,21 @@ input::-webkit-inner-spin-button {
   width: 100%;
   object-fit: cover;
 }
-.navshopp{
+.navshopp {
   position: relative;
   margin-bottom: 15px;
-
 }
 .navshop {
   position: relative;
   margin-bottom: 15px;
   width: 85%;
+}
+.navshop-image {
+  display: flex;
+  align-items: center;
+}
+.navshop-image img {
+  object-fit: cover;
 }
 .navshop-details {
   height: 400px;
@@ -2434,8 +2455,8 @@ textarea {
   display: flex;
   gap: 3%;
 }
-.details-content p{
-   font-size: 20px;
+.details-content p {
+  font-size: 20px;
   font-weight: 600;
 }
 .details-content h1 {
@@ -2454,25 +2475,24 @@ textarea {
   position: relative;
 }
 .details-img img {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.over{
-  
+.over {
   position: relative;
 }
-.over::after{
-content: "";
-position: absolute;
-top:0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(39,50,114,0.6);
+.over::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 50, 114, 0.6);
 }
-.absdate{
-    font-size:24px;
+.absdate {
+  font-size: 24px;
   font-weight: 600;
   color: #fff;
   position: absolute;
@@ -2480,40 +2500,69 @@ background-color: rgba(39,50,114,0.6);
   left: 110px;
   z-index: 5;
 }
-.abscontainer{
+.abscontainer {
   z-index: 10;
   width: 100%;
   display: flex;
-  justify-content:center;
-   position: absolute;
+  justify-content: center;
+  position: absolute;
   bottom: -50px;
   left: 0;
 }
 
-.abscontent{
+.abscontent {
   display: flex;
   align-items: center;
-   padding: 20px;
+  padding: 20px;
   width: 85%;
   height: 110px;
   background-color: #fff;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
 }
 .swiper {
   width: 100%;
 }
-
-.content-long {
- background-color: #f4f5f8;
+.content-longged{  background-color: #f4f5f8;
   height: 100%;
-padding: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  margin-bottom: 7%;}
+
+.content-longg {
+  background-color: #f4f5f8;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-bottom: 7%;
+}
+.content-long {
+  background-color: #f4f5f8;
+  height: 100%;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   margin-top: 130px;
   margin-bottom: 7%;
 }
+
+
 .content-long p {
+  width: 100%;
+  justify-content: center;
+  text-align: justify;
+  font-size: 20px;
+}
+.content-longg p {
+  width: 100%;
+  justify-content: center;
+  text-align: justify;
+  font-size: 20px;
+}
+.content-longged p {
   width: 100%;
   justify-content: center;
   text-align: justify;
@@ -2540,27 +2589,43 @@ padding: 50px;
 
   background-image: url("./images/geologypima.jpg");
 }
-#home2  p {
+#home2 p {
   font-size: 70px;
   font-weight: 600;
 }
-.titleone{
+.titleone {
   width: 100%;
   text-align: center;
   margin-bottom: 1%;
 }
-.navshopp{
+.navshopp {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-.navshopp-image{
-  width: 200px;
-  height: 200px;
-
+.navshopp-image {
+  max-height: 200px;
+  max-width: 200px;
+  width: auto;
+  height: auto;
 }
-.navshopp-image img{
-  width:100%;
-  height:100%;
+.navshopp-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-
+}
+.swiper-pagination-bullet {
+  
+  width: 12px !important;
+  height: 12px !important;
+  background: transparent !important;
+  border: 1px solid #203244 !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  width: 40px !important;
+  transition: width 0.5s !important;
+  border-radius: 5px !important;
+  background: #203244 !important;
+  border: 1px solid transparent !important;
 }

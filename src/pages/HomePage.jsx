@@ -3,11 +3,10 @@ import Slider from "../Components/Slider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import { Navigation } from "swiper";
+import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// Import Swiper styles
-
 import RatedBlog from "./RatedBlog";
 import Faq from "react-faq-component";
 import { useState, useEffect } from "react";
@@ -127,7 +126,7 @@ function Homepage() {
         <div className="headingg">
           <h1>Tərəfdaşlar</h1>
         </div>
-        <div className="navshops">
+        <div className="navshopps">
           <Swiper
             breakpoints={{
               120: {
@@ -147,8 +146,11 @@ function Homepage() {
             autoplay={{
               delay: 2500,
             }}
-            modules={[Autoplay, Navigation]}
-            navigation={true}
+            modules={[Autoplay, Pagination]}
+            pagination={{
+              clickable: true,
+              
+            }}
             slidesPerView={3}
           >
             {" "}
