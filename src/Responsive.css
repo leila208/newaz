@@ -554,9 +554,11 @@
 
     height: 35vh;
   }
+  
 }
 
 @media screen and (max-width: 425px) {
+
   .navshop-image {
     height: 270px;
   }
@@ -652,6 +654,7 @@ height: 100px;
   .artist {
     width: 90%;
     margin: 20px 0;
+  
   }
   .about-flowers-details p {
     font-size: 28px;
@@ -1107,6 +1110,9 @@ height: 100px;
   }
 }
 @media screen and (max-width: 320px) {
+  .artistimg img{
+    height: 100%;
+  }
   .navshop-image {
     height: 250px;
   }

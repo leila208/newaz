@@ -18,7 +18,9 @@ function Homepage() {
       {
         title: "Bizim hansı xidmətlərimiz var?",
         content:
-          "Ərazilərin geofiziki araşdırılması, qiymətli daş yataqlarının ən müasir qurğu və cihazlarla ölçülməsi və s. xidmətlərimiz var.",
+          "•Neft və qaz kəşfiyyatı xidmətləri </br> •Geoloji kəşfiyyat və tədqiqat </br> •Dağ-mədən tədqiqatları </br> •Ətraf mühitin və təhlükənin qiymətləndirilməsi, xüsusilə kimyəvi çirklənmə, tullantı anbarlarında riskin qiymətləndirilməsi, LNAPL çirklənməsinin sərhədlərinin müəyyən edilməsi və sürüşmələrin, çuxurların və s. və təhlükənin qiymətləndirilməsi </br> •Tunel və bənd və s. infrastrukturlar </br> •Qrunt sualrının kəşfiyyatı </br> •Geofiziki xidmətlər (seysmik tədqiqat, maqnit tədqiqatı, qravitasiya tədqiqatı müqaviməti, induksiya edilmiş qütbləşmə və spektral səbəbli qütbləşmə tədqiqatları",
+    
+      
       },
       {
         title: "Bu xidmətlər hasnı region və bölgələrdə həyata keçirilir?",

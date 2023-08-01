@@ -77,20 +77,34 @@ function AboutUs() {
             <div className="titleone">
               <h1>Gördüyümüz işlər</h1>
             </div>
-            <p className="one">
-              AzGP şirkəti artıq 2020-ci ildən fəaliyyətə başlayıb və artıq
-              illərdiki öz müştərilərinə yüksək keyfiyyətlə xidmət edir. Biz
-              Geofizika, Qrunt Suları və Ətraf Mühit Xidmətlərində aparıcı elm
-              və təcrübə ilə problemləri həll edirik. Məqsədimiz müştərilərimiz
-              üçün gördüyümüz işin keyfiyyətini qorumaq və ən yeni
-              texnologiyalarla hər zaman xidmətinizdə olmaqdır.
+            <p id="services" className="one">
+ 
+• Mədən kəşfiyyatı (Au-Ag-Cu porfir
+depozitlər), Gədəbəy, Azərbaycan 2020-2022 <br/>
+• Mədən kəşfiyyatı (Au-Ag-Cu porfir
+əmanətlər), Zəfər, Azərbaycan 2020-2022 <br/>
+• Mədən Kəşfiyyatı (Pb-Zn-Au
+mineralizasiya), Həftsavaran, İran 2021-2022 <br/>
+• Mədən Kəşfiyyatı (Qızıl
+Minerallaşdırma), Esfahan, İran 2020-2021 <br/>
+• Mədən Kəşfiyyatı (Pb-Zn-Au minerallaşması),
+Kohandan, İran 2021 <br/>
+• Mədən Kəşfiyyatı (Pb-Zn-Au minerallaşması),
+Besri, İran 2021 <br/>
+• Mədən Kəşfiyyatı (Au, Ag və Cu
+minerallaşma), Cənubi Xorasan, İran 2021 <br/>
+• Mədən Kəşfiyyatı (porfir və epitermal
+polimetal yataqları), Sistan və Bəlucistan,
+İran 2021 <br/>
+• Mədən Kəşfiyyatı (porfir Au-Cu yatağı),
+Zərgan çayı sahəsi 2020.
             </p>
           </div>
         </div>
         <div className="about-flowers">
           <div className="about-flowers-details">
             <p className="bolder">Komandamız indi daha böyükdür.</p>
-            <p className="pstyle">Sizlər üçün ən keyfiyyətli iş görürük.</p>
+
           </div>
         </div>
         <div className="friends">

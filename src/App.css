@@ -2539,8 +2539,8 @@ textarea {
   padding: 50px;
   display: flex;
   flex-direction: column;
-  margin-top: 15%;
-  margin-bottom: 7%;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 .content-long {
   background-color: #f4f5f8;
