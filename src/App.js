@@ -28,7 +28,6 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/faq" element={<Questions />} />{" "}
         <Route path="/blog" element={<Content />} />
         <Route path="/blogdetails/:slug" element={<BlogDetails />} />
         <Route path="/blogs/:slug" element={<FilterCategories />} />

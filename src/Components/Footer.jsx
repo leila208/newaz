@@ -87,9 +87,7 @@ function Footer() {
                     <li>
                       <NavLink to="/aboutus">Haqqımızda</NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/faq">Tez-tez verilən suallar</NavLink>
-                    </li>
+              
                     <li>
                       <NavLink to="/blog">Bloq</NavLink>
                     </li>
