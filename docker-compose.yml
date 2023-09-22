@@ -7,6 +7,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "82:80"
-  
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - FAST_REFRESH=false
 
 
