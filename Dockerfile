@@ -9,7 +9,7 @@ RUN npm install
 
 # Uygulama kaynak kodunu kopyala ve uygulamayı derle
 COPY . .
-RUN npm run build
+
 
 # İkinci aşama: Nginx ile uygulama yayınlama
 FROM nginx:1.21.3-alpine

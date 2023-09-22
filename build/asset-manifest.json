@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5a32737d.css",
+    "main.js": "/static/js/main.76604056.js",
+    "static/media/geologypima.jpg": "/static/media/geologypima.6b69b6a4247a5815fdde.jpg",
+    "static/media/11.jpg": "/static/media/11.7c0ae8609845f4b7a887.jpg",
+    "static/media/a.png": "/static/media/a.1146948ce1d1f1cd8da6.png",
+    "static/media/logoo.png": "/static/media/logoo.678b0edcb532c85e247b.png",
+    "index.html": "/index.html",
+    "main.5a32737d.css.map": "/static/css/main.5a32737d.css.map",
+    "main.76604056.js.map": "/static/js/main.76604056.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a32737d.css",
+    "static/js/main.76604056.js"
+  ]
+}
