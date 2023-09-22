@@ -62,7 +62,7 @@ function Contact() {
                 <p className="pcontent">Əlaqə:</p>
               </div>
               <div className="contact-information">
-                <p className="pcontent">+994513126599</p>
+                <p className="pcontent">+994553414129</p>
               </div>
             </div>
             <div className="small-text">
