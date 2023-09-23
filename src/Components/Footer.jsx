@@ -101,9 +101,7 @@ function Footer() {
                     <li>
                       <NavLink to="/contact">Əlaqə</NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/faq">Suallarınız</NavLink>
-                    </li>
+                   
                     <li>
                       <NavLink to="/aboutus">Komandamız</NavLink>
                     </li>
